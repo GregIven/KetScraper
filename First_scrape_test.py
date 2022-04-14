@@ -1,5 +1,4 @@
 import logging
-from lxml import etree
 from scraper_definitions import *
 
 

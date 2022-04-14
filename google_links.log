@@ -29,3 +29,30 @@ var a=e;2===(window.performance&&window.performance.navigation&&window.performan
 var b=[function(){google.tick&&google.tick("load","dcl")}];google.dclc=function(a){b.length?b.push(a):a()};function c(){for(var a=b.shift();a;)a(),a=b.shift()}window.addEventListener?(document.addEventListener("DOMContentLoaded",c,!1),window.addEventListener("load",c,!1)):window.attachEvent&&window.attachEvent("onload",c);}).call(this);
 window.jsl=window.jsl||{};window.jsl.dh=function(a,b,f){try{var g=document.getElementById(a);if(g)g.innerHTML=b,f&&f();else{var c={id:a,script:String(!!f),milestone:String(google.jslm||0)};google.jsla&&(c.async=google.jsla);var h=a.indexOf("_"),d=0<h?a.substring(0,h):"",k=document.createElement("div");k.innerHTML=b;var e=k.children[0];if(e&&(c.tag=e.tagName,c["class"]=String(e.className||null),c.name=String(e.getAttribute("jsname")),d)){a=[];var l=document.querySelectorAll('[id^="'+d+'_"]');for(b=0;b<l.length;++b)a.push(l[b].id);c.ids=a.join(",")}google.ml(Error(d?"Missing ID with prefix "+d:"Missing ID"),!1,c)}}catch(m){google.ml(m,!0,{"jsl.dh":!0})}};(function(){var x=false;
 google.jslm=x?2:1;})();(function(){(function(){google.csct={};google.csct.ps='AOvVaw2PiTKdYBfp-70O5waoeM9a\x26ust\x3d1649804360396486';})();})();(function(){(function(){google.csct.rd=true;})();})();(function(){(function(){google.csct.rl=true;})();})();google.drty&&google.drty(undefined,true);</script></body></html>
+DEBUG:root:yoy
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.com:443
+DEBUG:urllib3.connectionpool:https://www.google.com:443 "GET /search?q=ketamine%20oregon HTTP/1.1" 200 None
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:56125/session/ec460e416b1a069b90eff26c1e289b03/url {"url": "https://www.google.com/search?q=ketamine oregon"}
+DEBUG:urllib3.connectionpool:http://localhost:56125 "POST /session/ec460e416b1a069b90eff26c1e289b03/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:56125/session/ec460e416b1a069b90eff26c1e289b03/element {"using": "css selector", "value": "[id=\"search\"]"}
+DEBUG:urllib3.connectionpool:http://localhost:56125 "POST /session/ec460e416b1a069b90eff26c1e289b03/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:yoy
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.com:443
+DEBUG:urllib3.connectionpool:https://www.google.com:443 "GET /search?q=ketamine%20oregon HTTP/1.1" 200 None
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:55438/session/801c0d15a16cc7fe7825cc2114c6996d/url {"url": "https://www.google.com/search?q=ketamine oregon"}
+DEBUG:urllib3.connectionpool:http://localhost:55438 "POST /session/801c0d15a16cc7fe7825cc2114c6996d/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:55438/session/801c0d15a16cc7fe7825cc2114c6996d/element {"using": "css selector", "value": "[id=\"search\"]"}
+DEBUG:urllib3.connectionpool:http://localhost:55438 "POST /session/801c0d15a16cc7fe7825cc2114c6996d/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:yoy
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.com:443
+DEBUG:urllib3.connectionpool:https://www.google.com:443 "GET /search?q=ketamine%20oregon HTTP/1.1" 200 None
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:55528/session/73e2dfb31dcd6e69d42694a752bf3d20/url {"url": "https://www.google.com/search?q=ketamine oregon"}
+DEBUG:urllib3.connectionpool:http://localhost:55528 "POST /session/73e2dfb31dcd6e69d42694a752bf3d20/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:55528/session/73e2dfb31dcd6e69d42694a752bf3d20/element {"using": "css selector", "value": "[id=\"search\"]"}
+DEBUG:urllib3.connectionpool:http://localhost:55528 "POST /session/73e2dfb31dcd6e69d42694a752bf3d20/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request

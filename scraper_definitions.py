@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup, SoupStrainer
 import re
 import logging
 from urllib.parse import urlparse
+from Selenium_test import sel_invoke
 
 def parse_keywords_from_page(URL):
     page = requests.get(URL)
@@ -81,6 +82,8 @@ def get_google_results(term):
     GOOGLE_URL = 'https://www.google.com/search?q='
     current_term = GOOGLE_URL + term
     search_results = requests.get(current_term)
+
+    sel_invoke(current_term)
 
     soup_main = BeautifulSoup(search_results.content, 'html.parser')
     logging.debug(soup_main)    
