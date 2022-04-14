@@ -83,14 +83,11 @@ def get_google_results(term):
     logging.debug('yoy')
     GOOGLE_URL = 'https://www.google.com/search?q='
     current_term = GOOGLE_URL + term
-    search_results = requests.get(current_term)
+    source = sel_invoke(current_term)
 
-    sel_invoke(current_term)
+    soup = BeautifulSoup(source, 'html.parser')
 
-    soup_main = BeautifulSoup(search_results.content, 'html.parser')
-    logging.debug(soup_main)    
-    sub_results = soup_main.find(id="search")
-    print(sub_results)
+    sub_results = soup.find(id="search")
     all_a_tags = sub_results.find_all('a')
     links = []
 
