@@ -20,12 +20,13 @@ driver = webdriver.Chrome(options=options)
 
 def sel_invoke(url):
     driver.get(url)
-    elem = driver.find_element_by_id("search")
-    childNodes = elem.find_elements(By.XPATH(("./child::*")))
+    elem = driver.find_element(by=By.ID, value="search")
+    childNodes = elem.find_elements(by=By.TAG_NAME, value="div")
 
-    # for child in childNodes:
-    #     print(child)
+    for child in childNodes:
+        if (child.get_attribute('innerHTML')):
+            print(child.text)
 
-    time.sleep(10)
+    time.sleep(3)
     driver.close()
     return None

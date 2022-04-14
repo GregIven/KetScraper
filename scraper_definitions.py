@@ -1,8 +1,10 @@
-from pydoc import classname
 import requests
-from bs4 import BeautifulSoup, SoupStrainer
 import re
 import logging
+import time
+
+from bs4 import BeautifulSoup
+from pydoc import classname
 from urllib.parse import urlparse
 from Selenium_test import sel_invoke
 
@@ -87,7 +89,7 @@ def get_google_results(term):
 
     soup_main = BeautifulSoup(search_results.content, 'html.parser')
     logging.debug(soup_main)    
-    sub_results = soup_main.find(id="res")
+    sub_results = soup_main.find(id="search")
     print(sub_results)
     all_a_tags = sub_results.find_all('a')
     links = []
