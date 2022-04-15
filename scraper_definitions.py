@@ -83,8 +83,15 @@ def get_google_results(term):
     logging.debug('yoy')
     GOOGLE_URL = 'https://www.google.com/search?q='
     current_term = GOOGLE_URL + term
+
+
     source = sel_invoke(current_term)
 
+    
+
+    return None
+
+def parse_source(source):
     soup = BeautifulSoup(source, 'html.parser')
 
     sub_results = soup.find(id="search")
@@ -101,5 +108,4 @@ def get_google_results(term):
 
 
     print(links)
-
     return None
