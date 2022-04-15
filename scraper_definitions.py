@@ -80,7 +80,6 @@ def get_child_sitemaps(xml):
 
 def get_google_results(term):
     logging.basicConfig(filename='google_links.log', encoding='utf-8', level=logging.DEBUG)
-    logging.debug('yoy')
     GOOGLE_URL = 'https://www.google.com/search?q='
     current_term = GOOGLE_URL + term
 
