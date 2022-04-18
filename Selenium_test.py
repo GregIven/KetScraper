@@ -8,21 +8,26 @@ options = Options()
 options.add_argument("--disable-software-rasterizer")
 driver = webdriver.Chrome(options=options)
 
-def sel_invoke(url, list):
+def sel_invoke(url):
     page_list = []
     driver.get(url)
     driver.implicitly_wait(0.5)
     next_page = driver.find_elements(By.ID, value="pnnext")
     source = driver.page_source
-    next_page[0].click()
     page_list.append(source)
+    next_page[0].click()
     driver.implicitly_wait(0.5)
-    current_page_url = driver.current_url
    
     print(next_page)
     while (next_page):
-        sel_invoke(current_page_url, page_list)
-    
+        print(next_page)
+        next_page = driver.find_elements(By.ID, value="pnnext")
+        print(next_page)
+        source = driver.page_source
+        page_list.append(source)
+        next_page[0].click()
+        driver.implicitly_wait(0.5)
+
     driver.close()
-    return current_page_url, page_list
+    return page_list
 
