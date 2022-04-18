@@ -20,14 +20,17 @@ def sel_invoke(url):
    
     print(next_page)
     while (next_page):
-        print(next_page)
-        next_page = driver.find_elements(By.ID, value="pnnext")
-        print(next_page)
-        source = driver.page_source
-        page_list.append(source)
-        next_page[0].click()
-        driver.implicitly_wait(0.5)
+        if (driver.find_elements(By.ID, value="pnnext")):
+            next_page = driver.find_elements(By.ID, value="pnnext")
+            source = driver.page_source
+            page_list.append(source)
+            next_page[0].click()
+            driver.implicitly_wait(0.5)
+        else:
+            driver.close()
+            return page_list
 
-    driver.close()
-    return page_list
+        
+
+
 

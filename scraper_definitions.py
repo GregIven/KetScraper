@@ -86,7 +86,7 @@ def get_google_results(term):
 
     source = sel_invoke(current_term)
 
-    
+    print(len(source))
 
     return None
 
