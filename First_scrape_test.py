@@ -16,7 +16,9 @@ xml_sitemap = get_sitemap(URL)
 sitemap_type = get_sitemap_type(xml_sitemap)
 all_child_urls = get_child_sitemaps(xml_sitemap)
 
-get_google_results('ketamine oregon')
+results_of_search = get_google_results('ketamine oregon')
+
+print(results_of_search)
 
 ##TODO - is here to check what kind of sitemap the URL has.
 # if sitemap_type == 'sitemapindex':

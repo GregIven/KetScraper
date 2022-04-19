@@ -79,32 +79,37 @@ def get_child_sitemaps(xml):
     return output
 
 def get_google_results(term):
+    #This func takes a term and appends it to a google search
+    #sel_invoke returns list of all pages as html list_sources files
+    #parse_list_sources takes a list of html pages and parses each page for links that match keywords
     logging.basicConfig(filename='google_links.log', encoding='utf-8', level=logging.DEBUG)
     GOOGLE_URL = 'https://www.google.com/search?q='
     current_term = GOOGLE_URL + term
 
+    list_sources = sel_invoke(current_term)        
+    list_sources_parsed = parse_list_sources(list_sources)
+    
 
-    source = sel_invoke(current_term)
+    return list_sources_parsed
 
-    print(len(source))
+def parse_list_sources(list):
+    def html_parser(item):
+        soup = BeautifulSoup(item, 'html.parser')
+        sub_results = soup.find(id="search")
+        all_a_tags = sub_results.find_all('a')
+        links = []
 
-    return None
+        for link in all_a_tags:
+            if link.has_attr('href'):
+                url = re.search(r'(https?://\S+)', link['href'])
+                if url:
+                    url_parsed = urlparse(url.group(0))
+                    if url_parsed.netloc not in links:
+                        links.append(url_parsed.netloc)
+        return links
 
-def parse_source(source):
-    soup = BeautifulSoup(source, 'html.parser')
-
-    sub_results = soup.find(id="search")
-    all_a_tags = sub_results.find_all('a')
-    links = []
-
-    for link in all_a_tags:
-        if link.has_attr('href'):
-            url = re.search(r'(https?://\S+)', link['href'])
-            if url:
-                url_parsed = urlparse(url.group(0))
-                if url_parsed.netloc not in links:
-                    links.append(url_parsed.netloc)
-
-
-    print(links)
-    return None
+    list_links = []
+    for item in list:
+        list_links.append(html_parser(item))
+    
+    return list_links
