@@ -34,6 +34,11 @@ def parse_keywords_from_page(URL):
 
 
 def get_sitemap(URL):
+    contains_HTTPS = re.findall(r'http', URL)
+
+    if (not contains_HTTPS):
+        URL = 'https://' + URL
+
     SITEMAP = URL + 'sitemap.xml'
     sitemap = requests.get(SITEMAP)
     soup_sitemap = BeautifulSoup(sitemap.content, "lxml-xml")
@@ -88,9 +93,20 @@ def get_google_results(term):
 
     list_sources = sel_invoke(current_term)        
     list_sources_parsed = parse_list_sources(list_sources)
+
+    list_hits = []
+
+    for page in list_sources_parsed:
+        print(page)
+        for link in page:
+            print(link)
+            xml_sitemap = get_sitemap(link)
+            # sitemap_type = get_sitemap_type(xml_sitemap)
+            list_child_urls = get_child_sitemaps(xml_sitemap)
+            list_hits.append(list_child_urls)
     
 
-    return list_sources_parsed
+    return list_hits
 
 def parse_list_sources(list):
     def html_parser(item):

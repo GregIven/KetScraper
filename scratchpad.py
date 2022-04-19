@@ -8,30 +8,14 @@ keyword_filter = ["contact", "about", "location", "provider", "meet",
 keyword_hits = []
 header_filter = ["header", "links", "title", "navigation"]
 
-URL = '/url?q=https://rainfallmedicine.com/ketamine-therapy/&sa=U&ved=2ahUKEwit-Yf344z3AhVmKEQIHSxwAmUQFnoECAkQAg&usg=AOvVaw1yAO5pUwX6q0fM08-4p9a0'
+URL = 'https://ww.took.com'
 
-# keyword_hits = re.findall(r"(?=("+'|'.join(keyword_filter)+r"))", str(site))
+find_www = re.findall(r'w{3}', URL)
+find_https = re.findall(r'http', URL)
 
-keyword_hits = re.findall(r'|'.join(keyword_filter), site)
+print('found https?: {}, found www?: {} '.format(find_https,find_www))
 
 # with open('links.log') as links:
 #     lines = links.readlines()
 
 # links.close()
-
-
-# for item in lines:
-#     if (re.findall(r'|'.join(keyword_filter), item)):
-#         print(item)
-
-# keyword_hits = re.findall(r'|'.join(keyword_filter), lines)
-
-url = re.search(r'(https?://\S+)', URL)
-
-url_parsed = urlparse(url.group(0))
-
-print(url_parsed.netloc)
-
-# print(urlparse(URL))
-
-#search
