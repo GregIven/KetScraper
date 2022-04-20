@@ -32,14 +32,21 @@ def parse_keywords_from_page(URL):
 
     return true_strings
 
+def manual_link_parse(link):
+    #grabs all a tags with hrefs on a page with no sitemap
+
+    return None
 
 def get_sitemap(URL):
+    #uses requests to grab an xml file of all linked pages to main/landing page
     contains_HTTPS = re.findall(r'http', URL)
 
     if (not contains_HTTPS):
         URL = 'https://' + URL
 
+    print(URL)
     SITEMAP = URL + 'sitemap.xml'
+    print(SITEMAP)
     sitemap = requests.get(SITEMAP)
     soup_sitemap = BeautifulSoup(sitemap.content, "lxml-xml")
 
@@ -91,21 +98,26 @@ def get_google_results(term):
     GOOGLE_URL = 'https://www.google.com/search?q='
     current_term = GOOGLE_URL + term
 
-    list_sources = sel_invoke(current_term)        
+    #sel_invoke retrieves each google search page per terms html source
+    # returns a list of html source pages
+    list_sources = sel_invoke(current_term)
+    #parses each page source returned by a google search for all href links to 
+    # pages returned by the search. Returns lists of links
     list_sources_parsed = parse_list_sources(list_sources)
 
     list_hits = []
-
+    #goes through lists of links and grabs the sitemap
+    #if no sitemap found, manually traverses the page for links
+    #then with the sitemap retrieved, gets all URLs that match keywords
     for page in list_sources_parsed:
-        print(page)
         for link in page:
-            print(link)
             xml_sitemap = get_sitemap(link)
             # sitemap_type = get_sitemap_type(xml_sitemap)
             list_child_urls = get_child_sitemaps(xml_sitemap)
             list_hits.append(list_child_urls)
     
-
+    #list_hits is a list of interal pages for each page in a list returned by a google
+    # search per term
     return list_hits
 
 def parse_list_sources(list):
