@@ -35,22 +35,26 @@ def parse_keywords_from_page(URL):
 def manual_link_parse(link):
     #grabs all a tags with hrefs on a page with no sitemap
     all_page_links = html_parser(link)
-    print('{} as man link'.format(all_page_links))
+    print('{} as main link'.format(all_page_links))
     return None
 
 def get_sitemap(URL):
     #uses requests to grab an xml file of all linked pages to main/landing page
     contains_HTTPS = re.findall(r'http', URL)
-
+    # print('URL1: {}'.format(URL))
     if (not contains_HTTPS):
         URL = 'https://' + URL
 
     SITEMAP = URL + '/sitemap.xml'
+    # print('URL2: {}'.format(URL))
 
     try:
+        print('tried, sitemap: {}'.format(SITEMAP))
         sitemap = requests.get(SITEMAP)
         soup_sitemap = BeautifulSoup(sitemap.content, "lxml-xml")
-
+        soup_sitemap_pretty = soup_sitemap.prettify()
+        print(soup_sitemap_pretty[0:50])
+        # print('len on soup: {}'.format(soup_sitemap))
         return soup_sitemap
     except ConnectionError as err:
         print('{} is the error'.format(err))
@@ -98,29 +102,28 @@ def get_child_sitemaps(xml):
 
 def get_google_results(term):
     #This func takes a term and appends it to a google search
-    #sel_invoke returns list of all pages as html list_sources files
-    #parse_list_sources takes a list of html pages and parses each page for links that match keywords
     logging.basicConfig(filename='google_links.log', encoding='utf-8', level=logging.DEBUG)
     GOOGLE_URL = 'https://www.google.com/search?q='
     current_term = GOOGLE_URL + term
 
-    #sel_invoke retrieves each google search page per terms html source
-    # returns a list of html source pages
-    list_sources = sel_invoke(current_term)
-    #parses each page source returned by a google search for all href links to 
-    # pages returned by the search. Returns lists of links
-    list_sources_parsed = parse_list_sources(list_sources)
+    #sel_invoke generates list of links per page of google search
+    html_source_page_list = sel_invoke(current_term)
+
+    #takes list of html sources, parses for href's and returns links
+    compiled_link_list = parse_list_source(html_source_page_list)
 
     list_hits = []
     #goes through lists of links and grabs the sitemap
     #if no sitemap found, manually traverses the page for links
     #then with the sitemap retrieved, gets all URLs that match keywords
-    for page in list_sources_parsed:
+    for page in compiled_link_list:
+        print('list of links: {}'.format(page))
         for link in page:
-            if (get_sitemap(link)):
-                xml_sitemap = get_sitemap(link)
+            xml_sitemap = get_sitemap(link)
+            if (xml_sitemap):          
                 list_hits.append(get_child_sitemaps(xml_sitemap))
-            else:
+            elif (not xml_sitemap):
+                print('no site map')
                 list_hits.append(manual_link_parse(link))
             # sitemap_type = get_sitemap_type(xml_sitemap)
             
@@ -129,7 +132,7 @@ def get_google_results(term):
     # search per term
     return list_hits
 
-def parse_list_sources(list):
+def parse_list_source(list):
 
     list_links = []
     for item in list:
