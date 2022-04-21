@@ -34,7 +34,8 @@ def parse_keywords_from_page(URL):
 
 def manual_link_parse(link):
     #grabs all a tags with hrefs on a page with no sitemap
-
+    all_page_links = html_parser(link)
+    print('{} as man link'.format(all_page_links))
     return None
 
 def get_sitemap(URL):
@@ -44,13 +45,18 @@ def get_sitemap(URL):
     if (not contains_HTTPS):
         URL = 'https://' + URL
 
-    print(URL)
-    SITEMAP = URL + 'sitemap.xml'
-    print(SITEMAP)
-    sitemap = requests.get(SITEMAP)
-    soup_sitemap = BeautifulSoup(sitemap.content, "lxml-xml")
+    SITEMAP = URL + '/sitemap.xml'
 
-    return soup_sitemap
+    try:
+        sitemap = requests.get(SITEMAP)
+        soup_sitemap = BeautifulSoup(sitemap.content, "lxml-xml")
+
+        return soup_sitemap
+    except ConnectionError as err:
+        print('{} is the error'.format(err))
+        return None
+
+    
 
 def get_sitemap_type(xml):
     siteMapIndex = xml.find_all('sitemapindex')
@@ -111,17 +117,27 @@ def get_google_results(term):
     #then with the sitemap retrieved, gets all URLs that match keywords
     for page in list_sources_parsed:
         for link in page:
-            xml_sitemap = get_sitemap(link)
+            if (get_sitemap(link)):
+                xml_sitemap = get_sitemap(link)
+                list_hits.append(get_child_sitemaps(xml_sitemap))
+            else:
+                list_hits.append(manual_link_parse(link))
             # sitemap_type = get_sitemap_type(xml_sitemap)
-            list_child_urls = get_child_sitemaps(xml_sitemap)
-            list_hits.append(list_child_urls)
+            
     
     #list_hits is a list of interal pages for each page in a list returned by a google
     # search per term
     return list_hits
 
 def parse_list_sources(list):
-    def html_parser(item):
+
+    list_links = []
+    for item in list:
+        list_links.append(html_parser(item))
+    
+    return list_links
+
+def html_parser(item):
         soup = BeautifulSoup(item, 'html.parser')
         sub_results = soup.find(id="search")
         all_a_tags = sub_results.find_all('a')
@@ -135,9 +151,3 @@ def parse_list_sources(list):
                     if url_parsed.netloc not in links:
                         links.append(url_parsed.netloc)
         return links
-
-    list_links = []
-    for item in list:
-        list_links.append(html_parser(item))
-    
-    return list_links
