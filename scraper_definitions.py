@@ -8,6 +8,10 @@ from pydoc import classname
 from urllib.parse import urlparse
 from Selenium_test import sel_invoke
 
+logging.basicConfig(filename='sitemap_output.log', encoding='utf-8', level=logging.DEBUG)
+# logging.basicConfig(filename='links.log', encoding='utf-8', level=logging.INFO)
+# logging.info(site)
+
 def parse_keywords_from_page(URL):
     page = requests.get(URL)
 
@@ -53,7 +57,8 @@ def get_sitemap(URL):
         sitemap = requests.get(SITEMAP)
         soup_sitemap = BeautifulSoup(sitemap.content, "lxml-xml")
         soup_sitemap_pretty = soup_sitemap.prettify()
-        print(soup_sitemap_pretty[0:50])
+        # print(soup_sitemap_pretty[0:150])
+        l
         # print('len on soup: {}'.format(soup_sitemap))
         return soup_sitemap
     except ConnectionError as err:
@@ -81,9 +86,6 @@ def get_sitemap_type(xml):
 
 def get_child_sitemaps(xml):
     def get_relevant_links(site):
-        # logging.basicConfig(filename='links.log', encoding='utf-8', level=logging.INFO)
-        # logging.info(site)
-
         keyword_filter = ["conta", "about", "location", "provider", "meet", 
             "mission", "team", "who"] 
         keyword_hits = re.findall('|'.join(keyword_filter), str(site))
@@ -102,7 +104,6 @@ def get_child_sitemaps(xml):
 
 def get_google_results(term):
     #This func takes a term and appends it to a google search
-    logging.basicConfig(filename='google_links.log', encoding='utf-8', level=logging.DEBUG)
     GOOGLE_URL = 'https://www.google.com/search?q='
     current_term = GOOGLE_URL + term
 
@@ -133,7 +134,6 @@ def get_google_results(term):
     return list_hits
 
 def parse_list_source(list):
-
     list_links = []
     for item in list:
         list_links.append(html_parser(item))
