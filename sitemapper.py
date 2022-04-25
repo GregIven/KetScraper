@@ -21,9 +21,10 @@ def get_sitemap(URL):
     try:
         print('tried, sitemap: {}'.format(SITEMAP))
         sitemap = requests.get(SITEMAP)
+        sitemap_json = sitemap.json()
         soup_sitemap = BeautifulSoup(sitemap.content, "lxml-xml")
         soup_sitemap_pretty = soup_sitemap.prettify()
-        print(soup_sitemap_pretty[0:250])
+        print(sitemap_json)
         logging.debug(soup_sitemap_pretty[0:250])
         # print('len on soup: {}'.format(soup_sitemap))
         return soup_sitemap

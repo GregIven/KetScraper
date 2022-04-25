@@ -218,3 +218,27 @@ DEBUG:root:<?xml version="1.0" encoding="utf-8"?>
    </script>
    <body>
    </body
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52836/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}, "desiredCapabilities": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:52836
+DEBUG:urllib3.connectionpool:http://localhost:52836 "POST /session HTTP/1.1" 200 797
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52836/session/b46ea2f826dbb8d93c23de0edeba58a3/url {"url": "https://www.google.com/search?q=ketamine oregon"}
+DEBUG:urllib3.connectionpool:http://localhost:52836 "POST /session/b46ea2f826dbb8d93c23de0edeba58a3/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52836/session/b46ea2f826dbb8d93c23de0edeba58a3/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:52836 "POST /session/b46ea2f826dbb8d93c23de0edeba58a3/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52836/session/b46ea2f826dbb8d93c23de0edeba58a3/elements {"using": "css selector", "value": "[id=\"pnnext\"]"}
+DEBUG:urllib3.connectionpool:http://localhost:52836 "POST /session/b46ea2f826dbb8d93c23de0edeba58a3/elements HTTP/1.1" 200 90
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:52836/session/b46ea2f826dbb8d93c23de0edeba58a3/source {}
+DEBUG:urllib3.connectionpool:http://localhost:52836 "GET /session/b46ea2f826dbb8d93c23de0edeba58a3/source HTTP/1.1" 200 750562
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52836/session/b46ea2f826dbb8d93c23de0edeba58a3/element/826c434e-0d96-4aad-9a19-95a9723eed46/click {"id": "826c434e-0d96-4aad-9a19-95a9723eed46"}
+DEBUG:urllib3.connectionpool:http://localhost:52836 "POST /session/b46ea2f826dbb8d93c23de0edeba58a3/element/826c434e-0d96-4aad-9a19-95a9723eed46/click HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52836/session/b46ea2f826dbb8d93c23de0edeba58a3/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:52836 "POST /session/b46ea2f826dbb8d93c23de0edeba58a3/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): portlandketamineclinic.com:443
+DEBUG:urllib3.connectionpool:https://portlandketamineclinic.com:443 "GET /sitemap.xml HTTP/1.1" 404 575

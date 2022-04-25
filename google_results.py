@@ -1,5 +1,6 @@
-from scraper_definitions import parse_list_source, get_sitemap, get_child_sitemaps, manual_link_parse
+from scraper_definitions import parse_list_source, manual_link_parse
 from Selenium_test import sel_invoke
+from sitemapper import *
 
 def get_google_results(term):
     #This func takes a term and appends it to a google search
@@ -13,8 +14,8 @@ def get_google_results(term):
     compiled_link_list = parse_list_source(html_source_page_list)
 
     list_hits = []
-    #goes through lists of links and grabs the sitemap
-    #if no sitemap found, manually traverses the page for links
+    #goes through lists of links from google search and grabs the sitemap
+    #if no sitemap found, grabs top level url and searches that page for sitemap/links
     #then with the sitemap retrieved, gets all URLs that match keywords
     for page in compiled_link_list:
         print('list of links: {}'.format(page))

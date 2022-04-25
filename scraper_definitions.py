@@ -11,6 +11,8 @@ logging.basicConfig(filename='sitemap_output.log', encoding='utf-8', level=loggi
 # logging.basicConfig(filename='links.log', encoding='utf-8', level=logging.INFO)
 # logging.info(site)
 
+
+#TODO remove the requests/bs4 parsing from this def, it should just get passed a html page
 def parse_keywords_from_page(URL):
     page = requests.get(URL)
 
@@ -35,6 +37,7 @@ def parse_keywords_from_page(URL):
 
     return true_strings
 
+#TODO manually parse the page/domain tree of pages for important info
 def manual_link_parse(link):
     #grabs all a tags with hrefs on a page with no sitemap
     all_page_links = html_parser(link)
