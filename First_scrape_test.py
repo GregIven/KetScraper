@@ -1,5 +1,6 @@
 import logging
 from scraper_definitions import *
+from google_results import get_google_results
 
 # logging.basicConfig(filename='scrapeOutput.log', encoding='utf-8', level=logging.DEBUG)
 

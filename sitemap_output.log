@@ -1,0 +1,220 @@
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52340/session/5179a7fa23ab63eea60c7b313de4132e/url {"url": "https://www.google.com/search?q=ketamine oregon"}
+DEBUG:urllib3.connectionpool:http://localhost:52340 "POST /session/5179a7fa23ab63eea60c7b313de4132e/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52340/session/5179a7fa23ab63eea60c7b313de4132e/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:52340 "POST /session/5179a7fa23ab63eea60c7b313de4132e/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52340/session/5179a7fa23ab63eea60c7b313de4132e/elements {"using": "css selector", "value": "[id=\"pnnext\"]"}
+DEBUG:urllib3.connectionpool:http://localhost:52340 "POST /session/5179a7fa23ab63eea60c7b313de4132e/elements HTTP/1.1" 200 90
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:52340/session/5179a7fa23ab63eea60c7b313de4132e/source {}
+DEBUG:urllib3.connectionpool:http://localhost:52340 "GET /session/5179a7fa23ab63eea60c7b313de4132e/source HTTP/1.1" 200 780169
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52340/session/5179a7fa23ab63eea60c7b313de4132e/element/60a1a8f4-454d-4e27-b788-cbac44079299/click {"id": "60a1a8f4-454d-4e27-b788-cbac44079299"}
+DEBUG:urllib3.connectionpool:http://localhost:52340 "POST /session/5179a7fa23ab63eea60c7b313de4132e/element/60a1a8f4-454d-4e27-b788-cbac44079299/click HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52340/session/5179a7fa23ab63eea60c7b313de4132e/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:52340 "POST /session/5179a7fa23ab63eea60c7b313de4132e/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): portlandketamineclinic.com:443
+DEBUG:urllib3.connectionpool:https://portlandketamineclinic.com:443 "GET /sitemap.xml HTTP/1.1" 404 575
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52365/session/8afb9299434282aeffc78bc555b8aca0/url {"url": "https://www.google.com/search?q=ketamine oregon"}
+DEBUG:urllib3.connectionpool:http://localhost:52365 "POST /session/8afb9299434282aeffc78bc555b8aca0/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52365/session/8afb9299434282aeffc78bc555b8aca0/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:52365 "POST /session/8afb9299434282aeffc78bc555b8aca0/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52365/session/8afb9299434282aeffc78bc555b8aca0/elements {"using": "css selector", "value": "[id=\"pnnext\"]"}
+DEBUG:urllib3.connectionpool:http://localhost:52365 "POST /session/8afb9299434282aeffc78bc555b8aca0/elements HTTP/1.1" 200 90
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:52365/session/8afb9299434282aeffc78bc555b8aca0/source {}
+DEBUG:urllib3.connectionpool:http://localhost:52365 "GET /session/8afb9299434282aeffc78bc555b8aca0/source HTTP/1.1" 200 750401
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52365/session/8afb9299434282aeffc78bc555b8aca0/element/1f2a7058-64c1-4b64-8ec5-402c7da3575e/click {"id": "1f2a7058-64c1-4b64-8ec5-402c7da3575e"}
+DEBUG:urllib3.connectionpool:http://localhost:52365 "POST /session/8afb9299434282aeffc78bc555b8aca0/element/1f2a7058-64c1-4b64-8ec5-402c7da3575e/click HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52365/session/8afb9299434282aeffc78bc555b8aca0/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:52365 "POST /session/8afb9299434282aeffc78bc555b8aca0/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): portlandketamineclinic.com:443
+DEBUG:urllib3.connectionpool:https://portlandketamineclinic.com:443 "GET /sitemap.xml HTTP/1.1" 404 575
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): corvallisfamilymedicine.com:443
+DEBUG:urllib3.connectionpool:https://corvallisfamilymedicine.com:443 "GET /sitemap.xml HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.portlandketamineclinic.com:443
+DEBUG:urllib3.connectionpool:https://www.portlandketamineclinic.com:443 "GET /sitemap.xml HTTP/1.1" 404 575
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): ketamine.restorativehealthprimarycare.com:443
+DEBUG:urllib3.connectionpool:https://ketamine.restorativehealthprimarycare.com:443 "GET /sitemap.xml HTTP/1.1" 404 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): ketaminetreatmentoregon.com:443
+DEBUG:urllib3.connectionpool:https://ketaminetreatmentoregon.com:443 "GET /sitemap.xml HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://ketaminetreatmentoregon.com:443 "GET /sitemap_index.xml HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.spineic.com:443
+DEBUG:urllib3.connectionpool:https://www.spineic.com:443 "GET /sitemap.xml HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): rainfallmedicine.com:443
+DEBUG:urllib3.connectionpool:https://rainfallmedicine.com:443 "GET /sitemap.xml HTTP/1.1" 403 1239
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.oregon.gov:443
+DEBUG:urllib3.connectionpool:https://www.oregon.gov:443 "GET /sitemap.xml HTTP/1.1" 404 17967
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.repose-wellness.com:443
+DEBUG:urllib3.connectionpool:https://www.repose-wellness.com:443 "GET /sitemap.xml HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.settingpdx.com:443
+DEBUG:urllib3.connectionpool:https://www.settingpdx.com:443 "GET /sitemap.xml HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): pointketamine.com:443
+DEBUG:urllib3.connectionpool:https://pointketamine.com:443 "GET /sitemap.xml HTTP/1.1" 200 212
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): cornellpainclinic.com:443
+DEBUG:urllib3.connectionpool:https://cornellpainclinic.com:443 "GET /sitemap.xml HTTP/1.1" 406 226
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52488/session/f22765e327cbe7dc20c2afbe2f97e0e9/url {"url": "https://www.google.com/search?q=ketamine oregon"}
+DEBUG:urllib3.connectionpool:http://localhost:52488 "POST /session/f22765e327cbe7dc20c2afbe2f97e0e9/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52488/session/f22765e327cbe7dc20c2afbe2f97e0e9/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:52488 "POST /session/f22765e327cbe7dc20c2afbe2f97e0e9/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52488/session/f22765e327cbe7dc20c2afbe2f97e0e9/elements {"using": "css selector", "value": "[id=\"pnnext\"]"}
+DEBUG:urllib3.connectionpool:http://localhost:52488 "POST /session/f22765e327cbe7dc20c2afbe2f97e0e9/elements HTTP/1.1" 200 90
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:52488/session/f22765e327cbe7dc20c2afbe2f97e0e9/source {}
+DEBUG:urllib3.connectionpool:http://localhost:52488 "GET /session/f22765e327cbe7dc20c2afbe2f97e0e9/source HTTP/1.1" 200 790730
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52488/session/f22765e327cbe7dc20c2afbe2f97e0e9/element/b86902b4-23ea-42b4-b8a6-b9aa93e31368/click {"id": "b86902b4-23ea-42b4-b8a6-b9aa93e31368"}
+DEBUG:urllib3.connectionpool:http://localhost:52488 "POST /session/f22765e327cbe7dc20c2afbe2f97e0e9/element/b86902b4-23ea-42b4-b8a6-b9aa93e31368/click HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52488/session/f22765e327cbe7dc20c2afbe2f97e0e9/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:52488 "POST /session/f22765e327cbe7dc20c2afbe2f97e0e9/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): portlandketamineclinic.com:443
+DEBUG:urllib3.connectionpool:https://portlandketamineclinic.com:443 "GET /sitemap.xml HTTP/1.1" 404 575
+DEBUG:root:<?xml version="1.0" encoding="utf-8"?>
+<div>
+ <p>
+  <b>
+   404: Page not found
+  </b>
+  <br/>
+  This error is generated when there was no web page with the name you specified at the web site.
+ </p>
+ <p>
+  <b>
+   Troubleshooting suggestions:
+  </b>
+ <
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): corvallisfamilymedicine.com:443
+DEBUG:urllib3.connectionpool:https://corvallisfamilymedicine.com:443 "GET /sitemap.xml HTTP/1.1" 200 None
+DEBUG:root:<?xml version="1.0" encoding="utf-8"?>
+<!--generator='jetpack-10.8'-->
+<?xml-stylesheet type="text/xsl" href="//corvallisfamilymedicine.com/sitemap-index.xsl"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+ <sitemap>
+  <loc>
+   
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.portlandketamineclinic.com:443
+DEBUG:urllib3.connectionpool:https://www.portlandketamineclinic.com:443 "GET /sitemap.xml HTTP/1.1" 404 575
+DEBUG:root:<?xml version="1.0" encoding="utf-8"?>
+<div>
+ <p>
+  <b>
+   404: Page not found
+  </b>
+  <br/>
+  This error is generated when there was no web page with the name you specified at the web site.
+ </p>
+ <p>
+  <b>
+   Troubleshooting suggestions:
+  </b>
+ <
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): ketamine.restorativehealthprimarycare.com:443
+DEBUG:urllib3.connectionpool:https://ketamine.restorativehealthprimarycare.com:443 "GET /sitemap.xml HTTP/1.1" 404 None
+DEBUG:root:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html lang="en-US">
+ itemtype="http://schema.org/WebPage"&gt;
+ <head>
+  <meta charset="utf-8">
+   <script nonce="MLlJu1mJctv6J3BV06jy4Q">
+    var DOCS_timing={}; DOCS_timing['sl']=new Date().getT
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): ketaminetreatmentoregon.com:443
+DEBUG:urllib3.connectionpool:https://ketaminetreatmentoregon.com:443 "GET /sitemap.xml HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://ketaminetreatmentoregon.com:443 "GET /sitemap_index.xml HTTP/1.1" 200 None
+DEBUG:root:<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="//ketaminetreatmentoregon.com/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+ <sitemap>
+  <loc>
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.spineic.com:443
+DEBUG:urllib3.connectionpool:https://www.spineic.com:443 "GET /sitemap.xml HTTP/1.1" 200 2508
+DEBUG:root:<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+ <url>
+  <loc>
+   https://www.spineic.com/hom
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): rainfallmedicine.com:443
+DEBUG:urllib3.connectionpool:https://rainfallmedicine.com:443 "GET /sitemap.xml HTTP/1.1" 403 1239
+DEBUG:root:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Temporary Page
+  </title>
+  <link href="https://cf.wpx.net/favicon.ico" rel="shortcut icon" ty
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.oregon.gov:443
+DEBUG:urllib3.connectionpool:https://www.oregon.gov:443 "GET /sitemap.xml HTTP/1.1" 404 17967
+DEBUG:root:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html lang="en-us">
+ <head>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-type"/>
+  <title>
+   404 : State of Oregon
+  </
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.repose-wellness.com:443
+DEBUG:urllib3.connectionpool:https://www.repose-wellness.com:443 "GET /sitemap.xml HTTP/1.1" 200 None
+DEBUG:root:<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+ <url>
+  <loc>
+   https://www.repose-wellness.com/
+  </loc>
+ </url>
+ <url>
+  <loc>
+   https://www.repose-wellness.com/about
+  </loc>
+ </url>
+ <url>
+  
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.settingpdx.com:443
+DEBUG:urllib3.connectionpool:https://www.settingpdx.com:443 "GET /sitemap.xml HTTP/1.1" 200 None
+DEBUG:root:<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+ <url>
+  <loc>
+   https://www.settingpdx.com/
+  </loc>
+ </url>
+ <url>
+  <loc>
+   https://www.settingpdx.com/about
+  </loc>
+ </url>
+ <url>
+  <loc>
+   h
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): cornellpainclinic.com:443
+DEBUG:urllib3.connectionpool:https://cornellpainclinic.com:443 "GET /sitemap.xml HTTP/1.1" 406 226
+DEBUG:root:<?xml version="1.0" encoding="utf-8"?>
+<head>
+ <title>
+  Not Acceptable!
+ </title>
+</head>
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): pointketamine.com:443
+DEBUG:urllib3.connectionpool:https://pointketamine.com:443 "GET /sitemap.xml HTTP/1.1" 200 212
+DEBUG:root:<?xml version="1.0" encoding="utf-8"?>
+<html>
+ <head>
+  <META CONTENT="noindex,nofollow" NAME="robots">
+   <script src="/_Incapsula_Resource?SWJIYLWA=5074a744e2e3d891814e9a2dace20bd4,719d34d31c8e3a6e6fffd425f7e032f3">
+   </script>
+   <body>
+   </body
