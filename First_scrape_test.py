@@ -6,7 +6,7 @@ from google_results import get_google_results
 
 results_of_search = get_google_results('ketamine oregon')
 
-print('Search results: {}'.format(results_of_search))
+# print('Search results: {}'.format(results_of_search))
 
 ##TODO - is here to check what kind of sitemap the URL has.
 # if sitemap_type == 'sitemapindex':

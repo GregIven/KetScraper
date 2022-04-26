@@ -242,3 +242,372 @@ DEBUG:urllib3.connectionpool:http://localhost:52836 "POST /session/b46ea2f826dbb
 DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): portlandketamineclinic.com:443
 DEBUG:urllib3.connectionpool:https://portlandketamineclinic.com:443 "GET /sitemap.xml HTTP/1.1" 404 575
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:64076/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}, "desiredCapabilities": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:64076
+DEBUG:urllib3.connectionpool:http://localhost:64076 "POST /session HTTP/1.1" 200 797
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:64076/session/63c5a8113531b1a760de49cf154f0ba3/url {"url": "https://www.google.com/search?q=ketamine oregon"}
+DEBUG:urllib3.connectionpool:http://localhost:64076 "POST /session/63c5a8113531b1a760de49cf154f0ba3/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:64076/session/63c5a8113531b1a760de49cf154f0ba3/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:64076 "POST /session/63c5a8113531b1a760de49cf154f0ba3/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:64076/session/63c5a8113531b1a760de49cf154f0ba3/elements {"using": "css selector", "value": "[id=\"pnnext\"]"}
+DEBUG:urllib3.connectionpool:http://localhost:64076 "POST /session/63c5a8113531b1a760de49cf154f0ba3/elements HTTP/1.1" 200 90
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:64076/session/63c5a8113531b1a760de49cf154f0ba3/source {}
+DEBUG:urllib3.connectionpool:http://localhost:64076 "GET /session/63c5a8113531b1a760de49cf154f0ba3/source HTTP/1.1" 200 779500
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:64076/session/63c5a8113531b1a760de49cf154f0ba3/element/798b1724-91ca-4b68-9625-496997236df4/click {"id": "798b1724-91ca-4b68-9625-496997236df4"}
+DEBUG:urllib3.connectionpool:http://localhost:64076 "POST /session/63c5a8113531b1a760de49cf154f0ba3/element/798b1724-91ca-4b68-9625-496997236df4/click HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:64076/session/63c5a8113531b1a760de49cf154f0ba3/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:64076 "POST /session/63c5a8113531b1a760de49cf154f0ba3/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): portlandketamineclinic.com:443
+DEBUG:urllib3.connectionpool:https://portlandketamineclinic.com:443 "GET /sitemap.xml HTTP/1.1" 404 575
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:60681/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}, "desiredCapabilities": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:60681
+DEBUG:urllib3.connectionpool:http://localhost:60681 "POST /session HTTP/1.1" 200 797
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:60681/session/e97bca70c2b89df17411a296243c1090/url {"url": "https://www.google.com/search?q=ketamine oregon"}
+DEBUG:urllib3.connectionpool:http://localhost:60681 "POST /session/e97bca70c2b89df17411a296243c1090/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:60681/session/e97bca70c2b89df17411a296243c1090/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:60681 "POST /session/e97bca70c2b89df17411a296243c1090/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:60681/session/e97bca70c2b89df17411a296243c1090/elements {"using": "css selector", "value": "[id=\"pnnext\"]"}
+DEBUG:urllib3.connectionpool:http://localhost:60681 "POST /session/e97bca70c2b89df17411a296243c1090/elements HTTP/1.1" 200 90
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:60681/session/e97bca70c2b89df17411a296243c1090/source {}
+DEBUG:urllib3.connectionpool:http://localhost:60681 "GET /session/e97bca70c2b89df17411a296243c1090/source HTTP/1.1" 200 790157
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:60681/session/e97bca70c2b89df17411a296243c1090/element/82ceed09-47cb-4afb-b815-943121ef0ff6/click {"id": "82ceed09-47cb-4afb-b815-943121ef0ff6"}
+DEBUG:urllib3.connectionpool:http://localhost:60681 "POST /session/e97bca70c2b89df17411a296243c1090/element/82ceed09-47cb-4afb-b815-943121ef0ff6/click HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:60681/session/e97bca70c2b89df17411a296243c1090/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:60681 "POST /session/e97bca70c2b89df17411a296243c1090/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): portlandketamineclinic.com:443
+DEBUG:urllib3.connectionpool:https://portlandketamineclinic.com:443 "GET /sitemap.xml HTTP/1.1" 404 575
+DEBUG:root:<?xml version="1.0" encoding="utf-8"?>
+<div>
+ <p>
+  <b>
+   404: Page not found
+  </b>
+  <br/>
+  This error is generated when there was no web page with the name you specified at the web site.
+ </p>
+ <p>
+  <b>
+   Troubleshooting suggestions:
+  </b>
+ <
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): corvallisfamilymedicine.com:443
+DEBUG:urllib3.connectionpool:https://corvallisfamilymedicine.com:443 "GET /sitemap.xml HTTP/1.1" 200 None
+DEBUG:root:<?xml version="1.0" encoding="utf-8"?>
+<!--generator='jetpack-10.8'-->
+<?xml-stylesheet type="text/xsl" href="//corvallisfamilymedicine.com/sitemap-index.xsl"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+ <sitemap>
+  <loc>
+   
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.portlandketamineclinic.com:443
+DEBUG:urllib3.connectionpool:https://www.portlandketamineclinic.com:443 "GET /sitemap.xml HTTP/1.1" 404 575
+DEBUG:root:<?xml version="1.0" encoding="utf-8"?>
+<div>
+ <p>
+  <b>
+   404: Page not found
+  </b>
+  <br/>
+  This error is generated when there was no web page with the name you specified at the web site.
+ </p>
+ <p>
+  <b>
+   Troubleshooting suggestions:
+  </b>
+ <
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): ketamine.restorativehealthprimarycare.com:443
+DEBUG:urllib3.connectionpool:https://ketamine.restorativehealthprimarycare.com:443 "GET /sitemap.xml HTTP/1.1" 404 None
+DEBUG:root:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html lang="en-US">
+ itemtype="http://schema.org/WebPage"&gt;
+ <head>
+  <meta charset="utf-8">
+   <script nonce="1Ye1B8d2k9OkMaYBLnKU+A">
+    var DOCS_timing={}; DOCS_timing['sl']=new Date().getT
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): ketaminetreatmentoregon.com:443
+DEBUG:urllib3.connectionpool:https://ketaminetreatmentoregon.com:443 "GET /sitemap.xml HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://ketaminetreatmentoregon.com:443 "GET /sitemap_index.xml HTTP/1.1" 200 None
+DEBUG:root:<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="//ketaminetreatmentoregon.com/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+ <sitemap>
+  <loc>
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.spineic.com:443
+DEBUG:urllib3.connectionpool:https://www.spineic.com:443 "GET /sitemap.xml HTTP/1.1" 200 2508
+DEBUG:root:<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+ <url>
+  <loc>
+   https://www.spineic.com/hom
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): rainfallmedicine.com:443
+DEBUG:urllib3.connectionpool:https://rainfallmedicine.com:443 "GET /sitemap.xml HTTP/1.1" 403 1239
+DEBUG:root:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Temporary Page
+  </title>
+  <link href="https://cf.wpx.net/favicon.ico" rel="shortcut icon" ty
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.oregon.gov:443
+DEBUG:urllib3.connectionpool:https://www.oregon.gov:443 "GET /sitemap.xml HTTP/1.1" 404 17967
+DEBUG:root:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html lang="en-us">
+ <head>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-type"/>
+  <title>
+   404 : State of Oregon
+  </
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.repose-wellness.com:443
+DEBUG:urllib3.connectionpool:https://www.repose-wellness.com:443 "GET /sitemap.xml HTTP/1.1" 200 None
+DEBUG:root:<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+ <url>
+  <loc>
+   https://www.repose-wellness.com/
+  </loc>
+ </url>
+ <url>
+  <loc>
+   https://www.repose-wellness.com/about
+  </loc>
+ </url>
+ <url>
+  
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.settingpdx.com:443
+DEBUG:urllib3.connectionpool:https://www.settingpdx.com:443 "GET /sitemap.xml HTTP/1.1" 200 None
+DEBUG:root:<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+ <url>
+  <loc>
+   https://www.settingpdx.com/
+  </loc>
+ </url>
+ <url>
+  <loc>
+   https://www.settingpdx.com/about
+  </loc>
+ </url>
+ <url>
+  <loc>
+   h
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): pointketamine.com:443
+DEBUG:urllib3.connectionpool:https://pointketamine.com:443 "GET /sitemap.xml HTTP/1.1" 200 212
+DEBUG:root:<?xml version="1.0" encoding="utf-8"?>
+<html>
+ <head>
+  <META CONTENT="noindex,nofollow" NAME="robots">
+   <script src="/_Incapsula_Resource?SWJIYLWA=5074a744e2e3d891814e9a2dace20bd4,719d34d31c8e3a6e6fffd425f7e032f3">
+   </script>
+   <body>
+   </body
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): cornellpainclinic.com:443
+DEBUG:urllib3.connectionpool:https://cornellpainclinic.com:443 "GET /sitemap.xml HTTP/1.1" 406 226
+DEBUG:root:<?xml version="1.0" encoding="utf-8"?>
+<head>
+ <title>
+  Not Acceptable!
+ </title>
+</head>
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:60943/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}, "desiredCapabilities": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:60943
+DEBUG:urllib3.connectionpool:http://localhost:60943 "POST /session HTTP/1.1" 200 797
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:60974/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}, "desiredCapabilities": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:60974
+DEBUG:urllib3.connectionpool:http://localhost:60974 "POST /session HTTP/1.1" 200 798
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:60974/session/411241f5634d88958579eb0bfd8453ef/url {"url": "https://www.google.com/search?q=ketamine oregon"}
+DEBUG:urllib3.connectionpool:http://localhost:60974 "POST /session/411241f5634d88958579eb0bfd8453ef/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:60974/session/411241f5634d88958579eb0bfd8453ef/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:60974 "POST /session/411241f5634d88958579eb0bfd8453ef/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:60974/session/411241f5634d88958579eb0bfd8453ef/elements {"using": "css selector", "value": "[id=\"pnnext\"]"}
+DEBUG:urllib3.connectionpool:http://localhost:60974 "POST /session/411241f5634d88958579eb0bfd8453ef/elements HTTP/1.1" 200 90
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:60974/session/411241f5634d88958579eb0bfd8453ef/source {}
+DEBUG:urllib3.connectionpool:http://localhost:60974 "GET /session/411241f5634d88958579eb0bfd8453ef/source HTTP/1.1" 200 774095
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:60974/session/411241f5634d88958579eb0bfd8453ef/element/341c68ac-02a5-42e0-81b2-f5092ee7d104/click {"id": "341c68ac-02a5-42e0-81b2-f5092ee7d104"}
+DEBUG:urllib3.connectionpool:http://localhost:60974 "POST /session/411241f5634d88958579eb0bfd8453ef/element/341c68ac-02a5-42e0-81b2-f5092ee7d104/click HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:60974/session/411241f5634d88958579eb0bfd8453ef/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:60974 "POST /session/411241f5634d88958579eb0bfd8453ef/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): portlandketamineclinic.com:443
+DEBUG:urllib3.connectionpool:https://portlandketamineclinic.com:443 "GET /sitemap.xml HTTP/1.1" 404 575
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:63247/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}, "desiredCapabilities": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:63247
+DEBUG:urllib3.connectionpool:http://localhost:63247 "POST /session HTTP/1.1" 200 797
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:63247/session/0dc006e1c07ccbc041f5b11f4ab8fdd0/url {"url": "https://www.google.com/search?q=ketamine oregon"}
+DEBUG:urllib3.connectionpool:http://localhost:63247 "POST /session/0dc006e1c07ccbc041f5b11f4ab8fdd0/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:63247/session/0dc006e1c07ccbc041f5b11f4ab8fdd0/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:63247 "POST /session/0dc006e1c07ccbc041f5b11f4ab8fdd0/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:63247/session/0dc006e1c07ccbc041f5b11f4ab8fdd0/elements {"using": "css selector", "value": "[id=\"pnnext\"]"}
+DEBUG:urllib3.connectionpool:http://localhost:63247 "POST /session/0dc006e1c07ccbc041f5b11f4ab8fdd0/elements HTTP/1.1" 200 90
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:63247/session/0dc006e1c07ccbc041f5b11f4ab8fdd0/source {}
+DEBUG:urllib3.connectionpool:http://localhost:63247 "GET /session/0dc006e1c07ccbc041f5b11f4ab8fdd0/source HTTP/1.1" 200 773532
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:63247/session/0dc006e1c07ccbc041f5b11f4ab8fdd0/element/78ef69c2-70db-4c12-a9e0-d676315019cd/click {"id": "78ef69c2-70db-4c12-a9e0-d676315019cd"}
+DEBUG:urllib3.connectionpool:http://localhost:63247 "POST /session/0dc006e1c07ccbc041f5b11f4ab8fdd0/element/78ef69c2-70db-4c12-a9e0-d676315019cd/click HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:63247/session/0dc006e1c07ccbc041f5b11f4ab8fdd0/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:63247 "POST /session/0dc006e1c07ccbc041f5b11f4ab8fdd0/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): portlandketamineclinic.com:443
+DEBUG:urllib3.connectionpool:https://portlandketamineclinic.com:443 "GET /sitemap.xml HTTP/1.1" 404 575
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:63277/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}, "desiredCapabilities": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:63277
+DEBUG:urllib3.connectionpool:http://localhost:63277 "POST /session HTTP/1.1" 200 798
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:63277/session/a5a9fead7984c008d76924d1324b021c/url {"url": "https://www.google.com/search?q=ketamine oregon"}
+DEBUG:urllib3.connectionpool:http://localhost:63277 "POST /session/a5a9fead7984c008d76924d1324b021c/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:63277/session/a5a9fead7984c008d76924d1324b021c/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:63277 "POST /session/a5a9fead7984c008d76924d1324b021c/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:63277/session/a5a9fead7984c008d76924d1324b021c/elements {"using": "css selector", "value": "[id=\"pnnext\"]"}
+DEBUG:urllib3.connectionpool:http://localhost:63277 "POST /session/a5a9fead7984c008d76924d1324b021c/elements HTTP/1.1" 200 90
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:63277/session/a5a9fead7984c008d76924d1324b021c/source {}
+DEBUG:urllib3.connectionpool:http://localhost:63277 "GET /session/a5a9fead7984c008d76924d1324b021c/source HTTP/1.1" 200 779522
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:63277/session/a5a9fead7984c008d76924d1324b021c/element/6477d6e4-46b8-41d2-8197-8e357d249198/click {"id": "6477d6e4-46b8-41d2-8197-8e357d249198"}
+DEBUG:urllib3.connectionpool:http://localhost:63277 "POST /session/a5a9fead7984c008d76924d1324b021c/element/6477d6e4-46b8-41d2-8197-8e357d249198/click HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:63277/session/a5a9fead7984c008d76924d1324b021c/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:63277 "POST /session/a5a9fead7984c008d76924d1324b021c/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:65242/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}, "desiredCapabilities": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:65242
+DEBUG:urllib3.connectionpool:http://localhost:65242 "POST /session HTTP/1.1" 200 796
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:65242/session/a5cda59728b9df79abe0649b77ded58f/url {"url": "https://www.google.com/search?q=ketamine oregon"}
+DEBUG:urllib3.connectionpool:http://localhost:65242 "POST /session/a5cda59728b9df79abe0649b77ded58f/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:65242/session/a5cda59728b9df79abe0649b77ded58f/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:65242 "POST /session/a5cda59728b9df79abe0649b77ded58f/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:65242/session/a5cda59728b9df79abe0649b77ded58f/elements {"using": "css selector", "value": "[id=\"pnnext\"]"}
+DEBUG:urllib3.connectionpool:http://localhost:65242 "POST /session/a5cda59728b9df79abe0649b77ded58f/elements HTTP/1.1" 200 90
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:65242/session/a5cda59728b9df79abe0649b77ded58f/source {}
+DEBUG:urllib3.connectionpool:http://localhost:65242 "GET /session/a5cda59728b9df79abe0649b77ded58f/source HTTP/1.1" 200 762301
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:65242/session/a5cda59728b9df79abe0649b77ded58f/element/98c1890a-b861-4020-99f8-cada9876781c/click {"id": "98c1890a-b861-4020-99f8-cada9876781c"}
+DEBUG:urllib3.connectionpool:http://localhost:65242 "POST /session/a5cda59728b9df79abe0649b77ded58f/element/98c1890a-b861-4020-99f8-cada9876781c/click HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:65242/session/a5cda59728b9df79abe0649b77ded58f/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:65242 "POST /session/a5cda59728b9df79abe0649b77ded58f/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:65514/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}, "desiredCapabilities": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:65514
+DEBUG:urllib3.connectionpool:http://localhost:65514 "POST /session HTTP/1.1" 200 798
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:65514/session/5a0afcb09ab1088f952549bee8a5a801/url {"url": "https://www.google.com/search?q=ketamine oregon"}
+DEBUG:urllib3.connectionpool:http://localhost:65514 "POST /session/5a0afcb09ab1088f952549bee8a5a801/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:65514/session/5a0afcb09ab1088f952549bee8a5a801/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:65514 "POST /session/5a0afcb09ab1088f952549bee8a5a801/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:65514/session/5a0afcb09ab1088f952549bee8a5a801/elements {"using": "css selector", "value": "[id=\"pnnext\"]"}
+DEBUG:urllib3.connectionpool:http://localhost:65514 "POST /session/5a0afcb09ab1088f952549bee8a5a801/elements HTTP/1.1" 200 90
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:65514/session/5a0afcb09ab1088f952549bee8a5a801/source {}
+DEBUG:urllib3.connectionpool:http://localhost:65514 "GET /session/5a0afcb09ab1088f952549bee8a5a801/source HTTP/1.1" 200 797615
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:65514/session/5a0afcb09ab1088f952549bee8a5a801/element/5bc7736b-7b40-4a99-acdd-c8ca686b91f7/click {"id": "5bc7736b-7b40-4a99-acdd-c8ca686b91f7"}
+DEBUG:urllib3.connectionpool:http://localhost:65514 "POST /session/5a0afcb09ab1088f952549bee8a5a801/element/5bc7736b-7b40-4a99-acdd-c8ca686b91f7/click HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:65514/session/5a0afcb09ab1088f952549bee8a5a801/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:65514 "POST /session/5a0afcb09ab1088f952549bee8a5a801/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49322/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}, "desiredCapabilities": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:49322
+DEBUG:urllib3.connectionpool:http://localhost:49322 "POST /session HTTP/1.1" 200 797
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49322/session/09e56e9f4cb0b304964beaf5f7d0e2ea/url {"url": "https://www.google.com/search?q=ketamine oregon"}
+DEBUG:urllib3.connectionpool:http://localhost:49322 "POST /session/09e56e9f4cb0b304964beaf5f7d0e2ea/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49322/session/09e56e9f4cb0b304964beaf5f7d0e2ea/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:49322 "POST /session/09e56e9f4cb0b304964beaf5f7d0e2ea/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49322/session/09e56e9f4cb0b304964beaf5f7d0e2ea/elements {"using": "css selector", "value": "[id=\"pnnext\"]"}
+DEBUG:urllib3.connectionpool:http://localhost:49322 "POST /session/09e56e9f4cb0b304964beaf5f7d0e2ea/elements HTTP/1.1" 200 90
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:49322/session/09e56e9f4cb0b304964beaf5f7d0e2ea/source {}
+DEBUG:urllib3.connectionpool:http://localhost:49322 "GET /session/09e56e9f4cb0b304964beaf5f7d0e2ea/source HTTP/1.1" 200 789921
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49322/session/09e56e9f4cb0b304964beaf5f7d0e2ea/element/363dc967-66f3-4eb6-81d4-05441488b290/click {"id": "363dc967-66f3-4eb6-81d4-05441488b290"}
+DEBUG:urllib3.connectionpool:http://localhost:49322 "POST /session/09e56e9f4cb0b304964beaf5f7d0e2ea/element/363dc967-66f3-4eb6-81d4-05441488b290/click HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49322/session/09e56e9f4cb0b304964beaf5f7d0e2ea/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:49322 "POST /session/09e56e9f4cb0b304964beaf5f7d0e2ea/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49353/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}, "desiredCapabilities": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:49353
+DEBUG:urllib3.connectionpool:http://localhost:49353 "POST /session HTTP/1.1" 200 796
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49353/session/a54d4c4d1068cc33bfa25de3784c1323/url {"url": "https://www.google.com/search?q=ketamine oregon"}
+DEBUG:urllib3.connectionpool:http://localhost:49353 "POST /session/a54d4c4d1068cc33bfa25de3784c1323/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49353/session/a54d4c4d1068cc33bfa25de3784c1323/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:49353 "POST /session/a54d4c4d1068cc33bfa25de3784c1323/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49353/session/a54d4c4d1068cc33bfa25de3784c1323/elements {"using": "css selector", "value": "[id=\"pnnext\"]"}
+DEBUG:urllib3.connectionpool:http://localhost:49353 "POST /session/a54d4c4d1068cc33bfa25de3784c1323/elements HTTP/1.1" 200 90
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:49353/session/a54d4c4d1068cc33bfa25de3784c1323/source {}
+DEBUG:urllib3.connectionpool:http://localhost:49353 "GET /session/a54d4c4d1068cc33bfa25de3784c1323/source HTTP/1.1" 200 749792
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49353/session/a54d4c4d1068cc33bfa25de3784c1323/element/43506099-017a-40d3-9b19-806c9a96a372/click {"id": "43506099-017a-40d3-9b19-806c9a96a372"}
+DEBUG:urllib3.connectionpool:http://localhost:49353 "POST /session/a54d4c4d1068cc33bfa25de3784c1323/element/43506099-017a-40d3-9b19-806c9a96a372/click HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49353/session/a54d4c4d1068cc33bfa25de3784c1323/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:49353 "POST /session/a54d4c4d1068cc33bfa25de3784c1323/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49399/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}, "desiredCapabilities": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:49399
+DEBUG:urllib3.connectionpool:http://localhost:49399 "POST /session HTTP/1.1" 200 798
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49399/session/f2b18eade0e3f5efa3b651c80083ec95/url {"url": "https://www.google.com/search?q=ketamine oregon"}
+DEBUG:urllib3.connectionpool:http://localhost:49399 "POST /session/f2b18eade0e3f5efa3b651c80083ec95/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49399/session/f2b18eade0e3f5efa3b651c80083ec95/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:49399 "POST /session/f2b18eade0e3f5efa3b651c80083ec95/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49399/session/f2b18eade0e3f5efa3b651c80083ec95/elements {"using": "css selector", "value": "[id=\"pnnext\"]"}
+DEBUG:urllib3.connectionpool:http://localhost:49399 "POST /session/f2b18eade0e3f5efa3b651c80083ec95/elements HTTP/1.1" 200 90
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:49399/session/f2b18eade0e3f5efa3b651c80083ec95/source {}
+DEBUG:urllib3.connectionpool:http://localhost:49399 "GET /session/f2b18eade0e3f5efa3b651c80083ec95/source HTTP/1.1" 200 780245
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49399/session/f2b18eade0e3f5efa3b651c80083ec95/element/fb34e96f-7e7b-4f95-a21b-e88d75469d73/click {"id": "fb34e96f-7e7b-4f95-a21b-e88d75469d73"}
+DEBUG:urllib3.connectionpool:http://localhost:49399 "POST /session/f2b18eade0e3f5efa3b651c80083ec95/element/fb34e96f-7e7b-4f95-a21b-e88d75469d73/click HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49399/session/f2b18eade0e3f5efa3b651c80083ec95/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:49399 "POST /session/f2b18eade0e3f5efa3b651c80083ec95/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request

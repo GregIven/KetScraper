@@ -37,13 +37,6 @@ def parse_keywords_from_page(URL):
 
     return true_strings
 
-#TODO manually parse the page/domain tree of pages for important info
-def manual_link_parse(link):
-    #grabs all a tags with hrefs on a page with no sitemap
-    all_page_links = html_parser(link)
-    print('{} as main link'.format(all_page_links))
-    return None
-
 #TODO check if the html has a locations/team/contact form on the home page
 #TODO see also if there is a profile/directory of providers
 #TODO the doctors/providers can be identified by a title/certification
@@ -56,8 +49,10 @@ def parse_list_source(list):
     
     return list_links
 
+#This function parses an html page for links
 def html_parser(item):
-        soup = BeautifulSoup(item, 'html.parser')
+        page = requests.get(item)
+        soup = BeautifulSoup(page, 'html.parser')
         sub_results = soup.find(id="search")
         all_a_tags = sub_results.find_all('a')
         links = []

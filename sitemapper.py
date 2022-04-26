@@ -3,6 +3,8 @@ import logging
 import re
 from bs4 import BeautifulSoup
 
+from scraper_definitions import html_parser
+
 
 logging.basicConfig(filename='sitemap_output.log', encoding='utf-8', level=logging.DEBUG)
 # logging.basicConfig(filename='links.log', encoding='utf-8', level=logging.INFO)
@@ -19,17 +21,21 @@ def get_sitemap(URL):
     # print('URL2: {}'.format(URL))
 
     try:
-        print('tried, sitemap: {}'.format(SITEMAP))
+        # print('tried, sitemap: {}'.format(SITEMAP))
         sitemap = requests.get(SITEMAP)
-        sitemap_json = sitemap.json()
         soup_sitemap = BeautifulSoup(sitemap.content, "lxml-xml")
-        soup_sitemap_pretty = soup_sitemap.prettify()
-        print(sitemap_json)
-        logging.debug(soup_sitemap_pretty[0:250])
+        # print(sitemap.status_code == 200)
+        if (sitemap.status_code == 200):
+            return soup_sitemap.prettify()
+        elif (sitemap.status_code != 200):
+            _links = html_parser(URL)
+            # print(_links)
+        # soup_sitemap_pretty = soup_sitemap.prettify()
+        # logging.debug(soup_sitemap_pretty[0:250])
         # print('len on soup: {}'.format(soup_sitemap))
         return soup_sitemap
     except ConnectionError as err:
-        print('{} is the error'.format(err))
+        # print('{} is the error'.format(err))
         return None
 
 def get_child_sitemaps(xml):
