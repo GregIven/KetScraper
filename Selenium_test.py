@@ -4,6 +4,8 @@ from selenium.webdriver.chrome.options import Options
 # from selenium.webdriver.support import expected_conditions as EC
 import time
 
+from scraper_definitions import html_parser
+
 options = Options()
 options.add_argument("--disable-software-rasterizer")
 options.add_argument("--headless")
@@ -17,7 +19,11 @@ def sel_invoke(url):
     driver.get(url)
     driver.implicitly_wait(0.5)
     next_page = driver.find_elements(By.ID, value="pnnext")
-    source = driver.page_source
+
+    # source = driver.page_source
+    print(url)
+    source = html_parser(url)
+    # print(source)
     page_list.append(source)
     next_page[0].click()
     driver.implicitly_wait(0.5)
@@ -34,7 +40,7 @@ def sel_invoke(url):
     #         driver.close()
     #         return page_list
 
-    return page_list
+    # return page_list
 
         
 

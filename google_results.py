@@ -6,13 +6,13 @@ def get_google_results(term):
     #This func takes a term and appends it to a google search
     GOOGLE_URL = 'https://www.google.com/search?q='
     current_term = GOOGLE_URL + term
-
+    
     #sel_invoke generates list of links per page of google search
     html_source_page_list = sel_invoke(current_term)
 
     #takes list of html sources, parses for href's and returns links
     compiled_link_list = parse_list_source(html_source_page_list)
-
+    
     list_hits = []
     #goes through lists of links from google search and grabs the sitemap
     #if no sitemap found, grabs top level url and searches that page for sitemap/links
@@ -25,7 +25,7 @@ def get_google_results(term):
                 list_hits.append(get_child_sitemaps(xml_sitemap))
             
     if (len(list_hits) > 100):
-        print('over!')
+        print('over!\n\n')
         return None
     #list_hits is a list of interal pages for each page in a list returned by a google
     # search per term

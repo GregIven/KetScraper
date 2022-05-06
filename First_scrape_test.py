@@ -4,7 +4,7 @@ from google_results import get_google_results
 
 # logging.basicConfig(filename='scrapeOutput.log', encoding='utf-8', level=logging.DEBUG)
 
-results_of_search = get_google_results('ketamine oregon')
+results_of_search = get_google_results('ketamine+oregon')
 
 # print('Search results: {}'.format(results_of_search))
 
