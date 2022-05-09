@@ -1,3 +1,4 @@
+from wsgiref import headers
 import requests
 import re
 import logging
@@ -5,6 +6,7 @@ import time
 
 from bs4 import BeautifulSoup
 from pydoc import classname
+from urllib.request import Request, urlopen
 from urllib.parse import urlparse
 
 logging.basicConfig(filename='sitemap_output.log', encoding='utf-8', level=logging.DEBUG)
@@ -44,7 +46,6 @@ def parse_keywords_from_page(URL):
 
 def parse_list_source(list):
     list_links = []
-    print(len(list))
     x = input()
     for item in list:
         list_links.append(html_parser(item))
@@ -53,15 +54,15 @@ def parse_list_source(list):
 
 #This function parses an html page for links
 def html_parser(item):
-        page = requests.get(item)
-        soup = BeautifulSoup(page.content, 'html.parser')
-        # body = soup.find(id="rcnt")
-        # print(len(body))
+        req = Request(item, headers={'User-Agent': 'Mozilla/5.0'})
+        page = urlopen(req).read().decode('utf-8')
+        soup = BeautifulSoup(page, 'html.parser')
+        
         logging.debug(soup.prettify())
-        sub_results = soup.find(id="rso")
-        print(sub_results)
+        # print(type(soup.prettify()))
+        all_a_tags = soup.find_all('a')
+        print(all_a_tags)
         x=input()
-        all_a_tags = sub_results.find_all('a')
         links = []
 
         for link in all_a_tags:

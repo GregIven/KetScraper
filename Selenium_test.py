@@ -17,7 +17,7 @@ driver = webdriver.Chrome(options=options)
 def sel_invoke(url):
     page_list = []
     driver.get(url)
-    driver.implicitly_wait(0.5)
+    driver.implicitly_wait(30)
     next_page = driver.find_elements(By.ID, value="pnnext")
 
     # source = driver.page_source
@@ -40,7 +40,7 @@ def sel_invoke(url):
     #         driver.close()
     #         return page_list
 
-    # return page_list
+    return page_list
 
         
 
