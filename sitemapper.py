@@ -22,6 +22,7 @@ def get_sitemap(URL):
         sitemap = requests.get(SITEMAP)
         soup_sitemap = BeautifulSoup(sitemap.content, "lxml-xml")
         if (sitemap.status_code == 200):
+            print(sitemap[0:10])
             return soup_sitemap.prettify()
         elif (sitemap.status_code != 200):
             _links = html_parser(URL)
@@ -30,7 +31,7 @@ def get_sitemap(URL):
         # logging.debug(soup_sitemap_pretty[0:250])
         # print('len on soup: {}'.format(soup_sitemap))
         return soup_sitemap
-    except ConnectionError as err:
+    except BaseException as err:
         return None
 
 def get_child_sitemaps(xml):
@@ -42,7 +43,11 @@ def get_child_sitemaps(xml):
         if keyword_hits:
             return site
         
-    sitemaps = xml.find_all("loc")
+    try:
+        sitemaps = xml.find_all("loc")
+    except BaseException as err:
+        print('no sitemap found')
+        pass
 
     output = []
     
