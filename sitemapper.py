@@ -13,18 +13,14 @@ logging.basicConfig(filename='sitemap_output.log', encoding='utf-8', level=loggi
 def get_sitemap(URL):
     #uses requests to grab an xml file of all linked pages to main/landing page
     contains_HTTPS = re.findall(r'http', URL)
-    # print('URL1: {}'.format(URL))
     if (not contains_HTTPS):
         URL = 'https://' + URL
 
     SITEMAP = URL + '/sitemap.xml'
-    # print('URL2: {}'.format(URL))
 
     try:
-        # print('tried, sitemap: {}'.format(SITEMAP))
         sitemap = requests.get(SITEMAP)
         soup_sitemap = BeautifulSoup(sitemap.content, "lxml-xml")
-        # print(sitemap.status_code == 200)
         if (sitemap.status_code == 200):
             return soup_sitemap.prettify()
         elif (sitemap.status_code != 200):
@@ -35,7 +31,6 @@ def get_sitemap(URL):
         # print('len on soup: {}'.format(soup_sitemap))
         return soup_sitemap
     except ConnectionError as err:
-        # print('{} is the error'.format(err))
         return None
 
 def get_child_sitemaps(xml):

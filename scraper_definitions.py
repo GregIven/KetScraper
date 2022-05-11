@@ -46,14 +46,13 @@ def parse_keywords_from_page(URL):
 
 def parse_list_source(list):
     list_links = []
-    x = input()
     for item in list:
-        list_links.append(html_parser(item))
-    
+        list_links.append((item))
     return list_links
 
 #This function parses an html page for links
 def html_parser(item):
+        print('item: {}, item type: {}'.format(item, type(item)))
         req = Request(item, headers={'User-Agent': 'Mozilla/5.0'})
         page = urlopen(req).read().decode('utf-8')
         soup = BeautifulSoup(page, 'html.parser')
@@ -61,8 +60,7 @@ def html_parser(item):
         logging.debug(soup.prettify())
         # print(type(soup.prettify()))
         all_a_tags = soup.find_all('a')
-        print(all_a_tags)
-        x=input()
+        # print(all_a_tags)
         links = []
 
         for link in all_a_tags:
