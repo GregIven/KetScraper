@@ -19,9 +19,9 @@ header_filter = ["header", "links", "title", "navigation"]
 
 # print('found https?: {}, found www?: {} '.format(find_https,find_www))
 
-string1 = 'https://policies.gogle.com'
+string1 = 'https://policies.google.com'
 
-print('google' not in string1)
+print(bool(re.search(r'\bgoogle\b', string1)))
 
 page = requests.get('https://portlandketamineclinic.com/sitemap.xml')
 

@@ -1,15 +1,16 @@
 from Selenium_test import sel_invoke
 from sitemapper import *
 
-def get_google_results(term):
+def get_google_results(term):    
+    list_hits = []
+    list_of_links = []
     #This func takes a term and appends it to a google search
     GOOGLE_URL = 'https://www.google.com/search?q='
     current_term = GOOGLE_URL + term
     
     #sel_invoke generates list of links per page of google search
     google_result_list = sel_invoke(current_term)
-    
-    list_hits = []
+
     #goes through lists of links from google search and grabs the sitemap
     #if no sitemap found, grabs top level url and searches that page for sitemap/links
     #then with the sitemap retrieved, gets all URLs that match keywords

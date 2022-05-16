@@ -56,8 +56,10 @@ def html_parser(item):
         for link in all_a_tags:
             if link.has_attr('href'):
                 url = re.search(r'(https?://\S+)', link['href'])
-                if url and ('google' not in url):
+                if url:
                     url_parsed = urlparse(url.group(0))
+                    #urlparse returns an object that is the url broken apart
                     if url_parsed.netloc not in links:
+                        if (not bool(re.search(r'\bgoogle\b', url_parsed.netloc))):
                             links.append(url_parsed.netloc)
         return links
