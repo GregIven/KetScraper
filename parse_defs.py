@@ -46,7 +46,7 @@ def parse_keywords_from_page(URL):
 
 #This function parses an html page for links
 def html_parser(item):
-        req = Request(item, headers={'Accepts': 'application/json','User-Agent': 'Mozilla/5.0', 'content-type': 'application/problem+json'})
+        req = Request(item, headers={'Accept': 'application/json','User-Agent': 'Chrome/42.0.2311.135'})
         page = urlopen(req).read().decode('utf-8')
         soup = BeautifulSoup(page, 'html.parser')
         
