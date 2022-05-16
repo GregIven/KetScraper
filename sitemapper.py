@@ -1,14 +1,14 @@
-import requests
 import logging
 import re
+import json
 from bs4 import BeautifulSoup
 
-from scraper_definitions import html_parser
+from urllib.request import Request, urlopen
+from urllib.parse import urlparse
+import urllib.error
 
 
 logging.basicConfig(filename='sitemap_output.log', encoding='utf-8', level=logging.DEBUG)
-# logging.basicConfig(filename='links.log', encoding='utf-8', level=logging.INFO)
-# logging.info(site)
 
 def get_sitemap(URL):
     #uses requests to grab an xml file of all linked pages to main/landing page
@@ -17,22 +17,20 @@ def get_sitemap(URL):
         URL = 'https://' + URL
 
     SITEMAP = URL + '/sitemap.xml'
-
     try:
-        sitemap = requests.get(SITEMAP)
-        soup_sitemap = BeautifulSoup(sitemap.content, "lxml-xml")
-        if (sitemap.status_code == 200):
-            print(sitemap[0:10])
-            return soup_sitemap.prettify()
-        elif (sitemap.status_code != 200):
-            _links = html_parser(URL)
-            # print(_links)
-        # soup_sitemap_pretty = soup_sitemap.prettify()
-        # logging.debug(soup_sitemap_pretty[0:250])
-        # print('len on soup: {}'.format(soup_sitemap))
-        return soup_sitemap
-    except BaseException as err:
+        sitemap_req = Request(SITEMAP, headers={'User-Agent': 'Mozilla/5.0'})
+        sitemap_decoded = urlopen(sitemap_req).read().decode('utf-8')
+        sitemap_souped = BeautifulSoup(sitemap_decoded, 'lxml-xml')
+        logging.debug(sitemap_souped)
+        # x=input()
+   
+    except urllib.error.HTTPError as err:
+        print('HTTPError: {}, original url: {}'.format(err.code, URL))
         return None
+    
+    else:
+        #code 200
+        return sitemap_souped
 
 def get_child_sitemaps(xml):
     def get_relevant_links(site):

@@ -19,10 +19,13 @@ header_filter = ["header", "links", "title", "navigation"]
 
 # print('found https?: {}, found www?: {} '.format(find_https,find_www))
 
+string1 = 'https://policies.gogle.com'
+
+print('google' not in string1)
 
 page = requests.get('https://portlandketamineclinic.com/sitemap.xml')
 
-print(page.status_code)
+# print(page.status_code)
 # with open('links.log') as links:
 #     lines = links.readlines()
 
