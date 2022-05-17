@@ -1,18 +1,19 @@
 from wsgiref import headers
-import requests
 import re
 import logging
 import time
+import requests_cache
+import requests
 
 from bs4 import BeautifulSoup
 from pydoc import classname
-from urllib.request import Request, urlopen
 from urllib.parse import urlparse
+
 
 logging.basicConfig(filename='sitemap_output.log', encoding='utf-8', level=logging.DEBUG)
 # logging.basicConfig(filename='links.log', encoding='utf-8', level=logging.INFO)
-# logging.info(site)
 
+session = requests_cache.CachedSession()
 
 #TODO remove the requests/bs4 parsing from this def, it should just get passed a html page
 def parse_keywords_from_page(URL):
@@ -46,20 +47,32 @@ def parse_keywords_from_page(URL):
 
 #This function parses an html page for links
 def html_parser(item):
-        req = Request(item, headers={'Accept': 'application/json','User-Agent': 'Chrome/42.0.2311.135'})
-        page = urlopen(req).read().decode('utf-8')
-        soup = BeautifulSoup(page, 'html.parser')
-        
-        all_a_tags = soup.find_all('a')
-        links = []
+    
+    response = session.get(item, headers={'Accept': 'application/json','User-Agent': 'Chrome/42.0.2311.135'})
 
-        for link in all_a_tags:
-            if link.has_attr('href'):
-                url = re.search(r'(https?://\S+)', link['href'])
-                if url:
-                    url_parsed = urlparse(url.group(0))
-                    #urlparse returns an object that is the url broken apart
-                    if url_parsed.netloc not in links:
-                        if (not bool(re.search(r'\bgoogle\b', url_parsed.netloc))):
-                            links.append(url_parsed.netloc)
-        return links
+    try:
+        soup = BeautifulSoup(response.text, 'html.parser')
+        return soup
+    except requests.HTTPError as err:
+        print('{} is the error'.format(err))
+        pass
+        
+        
+
+def parse_page_results(page):
+    if (page is None):
+        pass
+
+    all_a_tags = page.find_all('a')
+    links = []
+
+    for link in all_a_tags:
+        if link.has_attr('href'):
+            url = re.search(r'(https?://\S+)', link['href'])
+            if url:
+                url_parsed = urlparse(url.group(0))
+                #urlparse returns an object that is the url broken apart
+                if url_parsed.netloc not in links:
+                    if (not bool(re.search(r'\bgoogle\b', url_parsed.netloc))):
+                        links.append(url_parsed.netloc)
+    return links

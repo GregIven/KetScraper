@@ -4,7 +4,7 @@ from selenium.webdriver.chrome.options import Options
 # from selenium.webdriver.support import expected_conditions as EC
 import time
 
-from parse_defs import html_parser
+from parse_defs import *
 
 options = Options()
 options.add_argument("--disable-software-rasterizer")
@@ -22,7 +22,8 @@ def sel_invoke(url):
 
     # source = driver.page_source
     source = html_parser(url)
-    page_list.append(source)
+    parsed_page = parse_page_results(source)
+    page_list.append(parsed_page)
     next_page[0].click()
     driver.implicitly_wait(0.5)
    

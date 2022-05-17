@@ -8,13 +8,12 @@ def get_google_results(term):
     GOOGLE_URL = 'https://www.google.com/search?q='
     current_term = GOOGLE_URL + term
     
-    #sel_invoke generates list of links per page of google search
+    #Returns list of href links from a google page search result
     google_result_list = sel_invoke(current_term)
 
-    #goes through lists of links from google search and grabs the sitemap
-    #if no sitemap found, grabs top level url and searches that page for sitemap/links
-    #then with the sitemap retrieved, gets all URLs that match keywords
+    #parses multiple pages as a list of lists
     for page in google_result_list:
+        #for href link on a page, return sitemap and then append xml sitemap
         for link in page:
             xml_sitemap = get_sitemap(link)
             list_hits.append(xml_sitemap)

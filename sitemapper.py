@@ -1,14 +1,18 @@
 import logging
 import re
 import json
-from bs4 import BeautifulSoup
+from wsgiref import headers
+import requests_cache
+import requests
 
-from urllib.request import Request, urlopen
-from urllib.parse import urlparse
-import urllib.error
+from bs4 import BeautifulSoup
+from types import NoneType
+
 
 
 logging.basicConfig(filename='sitemap_output.log', encoding='utf-8', level=logging.DEBUG)
+session = requests_cache.CachedSession()
+
 
 def get_sitemap(URL):
     #uses requests to grab an xml file of all linked pages to main/landing page
@@ -18,16 +22,18 @@ def get_sitemap(URL):
 
     SITEMAP = URL + '/sitemap.xml'
     try:
-        sitemap_req = Request(SITEMAP, headers={'User-Agent': 'Mozilla/5.0'})
-        sitemap_decoded = urlopen(sitemap_req).read().decode('utf-8')
-        sitemap_souped = BeautifulSoup(sitemap_decoded, 'lxml-xml')
+        # sitemap_req = Request(SITEMAP, headers={'User-Agent': 'Mozilla/5.0'})
+        # sitemap_decoded = urlopen(sitemap_req).read().decode('utf-8')
+        response = session.get(SITEMAP, headers={'Accept': 'application/json','User-Agent': 'Chrome/42.0.2311.135'})
+        sitemap_souped = BeautifulSoup(response.text, 'lxml-xml')
         logging.debug(sitemap_souped)
         # x=input()
    
-    except urllib.error.HTTPError as err:
+    except requests.HTTPError as err:
         print('HTTPError: {}, original url: {}'.format(err.code, URL))
         return None
-    
+    except AttributeError as err:
+        print('error: {}'.format(err))
     else:
         #code 200
         return sitemap_souped
