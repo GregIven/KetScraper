@@ -13,6 +13,23 @@ from types import NoneType
 logging.basicConfig(filename='sitemap_output.log', encoding='utf-8', level=logging.DEBUG)
 session = requests_cache.CachedSession()
 
+def individual_site_mapper(sitemaps):
+    output = []
+    for sitemap in sitemaps:
+        if get_relevant_links(sitemap):
+            output.append(sitemap.text)
+    return output
+
+def get_relevant_links(site):
+    keyword_filter = ["conta", "about", "location", "provider", "meet", 
+        "mission", "team", "who"] 
+    keyword_hits = re.findall('|'.join(keyword_filter), str(site))
+
+    if keyword_hits:
+        return site
+    else:
+        return None
+
 
 def get_sitemap(URL):
     #uses requests to grab an xml file of all linked pages to main/landing page
@@ -21,6 +38,7 @@ def get_sitemap(URL):
         URL = 'https://' + URL
 
     SITEMAP = URL + '/sitemap.xml'
+    print(SITEMAP)
     try:
         # sitemap_req = Request(SITEMAP, headers={'User-Agent': 'Mozilla/5.0'})
         # sitemap_decoded = urlopen(sitemap_req).read().decode('utf-8')
@@ -39,26 +57,26 @@ def get_sitemap(URL):
         return sitemap_souped
 
 def get_child_sitemaps(xml):
-    def get_relevant_links(site):
-        keyword_filter = ["conta", "about", "location", "provider", "meet", 
-            "mission", "team", "who"] 
-        keyword_hits = re.findall('|'.join(keyword_filter), str(site))
+    xml = xml.prettify()
 
-        if keyword_hits:
-            return site
-        
+    # print('{} - sample, of {}'.format(xml[25:50]))
+    print(xml[0:5])
+
     try:
+        sitemaps = []
         sitemaps = xml.find_all("loc")
+        sitemap_link_hits = individual_site_mapper(sitemaps)
     except BaseException as err:
         print('no sitemap found')
+        sitemap_link_hits = []
         pass
 
-    output = []
-    
-    for sitemap in sitemaps:
-        if get_relevant_links(sitemap):
-            output.append(sitemap.text)
-    return output
+    print(len(sitemap_link_hits))
+
+    if (len(sitemap_link_hits) < 1):
+        print(xml[0:275])
+        x=input()
+    return sitemap_link_hits
 
 def get_sitemap_type(xml):
     siteMapIndex = xml.find_all('sitemapindex')
@@ -70,3 +88,4 @@ def get_sitemap_type(xml):
         return 'urlset'
     else:
         return
+
