@@ -15,7 +15,7 @@ def get_google_results(term):
     for page in result_pages:
         #for href link on a page, return sitemap and then append xml sitemap
         for link in page:
-            xml_sitemap = get_sitemap(link)
+            xml_sitemap = get_sitemap(link["redir"])
             list_of_sitemaps.append(xml_sitemap)
     
     for xml_doc in list_of_sitemaps:

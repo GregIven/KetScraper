@@ -49,10 +49,10 @@ def parse_keywords_from_page(URL):
 def html_parser(item):
     
     response = session.get(item, headers={'Accept': 'application/json','User-Agent': 'Chrome/42.0.2311.135'})
-
+    redir_url = response.url
     try:
         soup = BeautifulSoup(response.text, 'html.parser')
-        return soup
+        return {"redirect": redir_url, "soup": soup}
     except requests.HTTPError as err:
         print('{} is the error'.format(err))
         pass

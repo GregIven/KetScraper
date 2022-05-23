@@ -21,8 +21,9 @@ def sel_invoke(url):
     next_page = driver.find_elements(By.ID, value="pnnext")
 
     # source = driver.page_source
-    source = html_parser(url)
-    parsed_page = parse_page_results(source)
+    source_dict = html_parser(url)
+    parsed_page = parse_page_results(source_dict["soup"])
+    redir_url = source_dict["redirect"]
     page_list.append(parsed_page)
     next_page[0].click()
     driver.implicitly_wait(0.5)
@@ -39,7 +40,7 @@ def sel_invoke(url):
     #         driver.close()
     #         return page_list
 
-    return page_list
+    return {"pages": page_list, "redirect": redir_url}
 
         
 
