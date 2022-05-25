@@ -39,7 +39,7 @@ def sel_invoke(url):
     #         driver.close()
     #         return page_list
 
-    return {'request-headers': source_dict['request-headers'], 'soup-object': parsed_page}
+    return {'request-headers': source_dict['request-headers'], 'soup-of-page': parsed_page}
 
         
 

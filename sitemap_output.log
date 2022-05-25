@@ -293,3 +293,153 @@ DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
 DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:56329/session/6fe6a48bc09e298b59093aa1d3c30a16/timeouts {"implicit": 500}
 DEBUG:urllib3.connectionpool:http://localhost:56329 "POST /session/6fe6a48bc09e298b59093aa1d3c30a16/timeouts HTTP/1.1" 200 14
 DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:requests_cache.backends:Initializing backend: None http_cache
+DEBUG:requests_cache.backends.base:Initializing SQLitePickleDict with serializer: <requests_cache.serializers.pipeline.SerializerPipeline object at 0x000002197B0DAE00>
+DEBUG:requests_cache.backends.sqlite:Opening connection to C:\Users\g.drew\OneDrive - Medivant Health\Documents\Python_projects\Src\http_cache.sqlite:responses
+DEBUG:requests_cache.backends.base:Initializing SQLiteDict with serializer: <requests_cache.serializers.pipeline.SerializerPipeline object at 0x000002197B0DAE00>
+DEBUG:requests_cache.backends.sqlite:Opening connection to C:\Users\g.drew\OneDrive - Medivant Health\Documents\Python_projects\Src\http_cache.sqlite:redirects
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:56768/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}, "desiredCapabilities": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:56768
+DEBUG:urllib3.connectionpool:http://localhost:56768 "POST /session HTTP/1.1" 200 795
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:requests_cache.backends:Initializing backend: None http_cache
+DEBUG:requests_cache.backends.base:Initializing SQLitePickleDict with serializer: <requests_cache.serializers.pipeline.SerializerPipeline object at 0x000002197B0DAE00>
+DEBUG:requests_cache.backends.sqlite:Opening connection to C:\Users\g.drew\OneDrive - Medivant Health\Documents\Python_projects\Src\http_cache.sqlite:responses
+DEBUG:requests_cache.backends.base:Initializing SQLiteDict with serializer: <requests_cache.serializers.pipeline.SerializerPipeline object at 0x000002197B0DAE00>
+DEBUG:requests_cache.backends.sqlite:Opening connection to C:\Users\g.drew\OneDrive - Medivant Health\Documents\Python_projects\Src\http_cache.sqlite:redirects
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:56768/session/70c47e1c938571f9252d40bd9a0dcc64/url {"url": "https://www.google.com/search?q=ketamine+oregon"}
+DEBUG:urllib3.connectionpool:http://localhost:56768 "POST /session/70c47e1c938571f9252d40bd9a0dcc64/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:56768/session/70c47e1c938571f9252d40bd9a0dcc64/timeouts {"implicit": 30000}
+DEBUG:urllib3.connectionpool:http://localhost:56768 "POST /session/70c47e1c938571f9252d40bd9a0dcc64/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:56768/session/70c47e1c938571f9252d40bd9a0dcc64/elements {"using": "css selector", "value": "[id=\"pnnext\"]"}
+DEBUG:urllib3.connectionpool:http://localhost:56768 "POST /session/70c47e1c938571f9252d40bd9a0dcc64/elements HTTP/1.1" 200 90
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:requests_cache.cache_control:Cache directives from request headers: {}
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:56768/session/70c47e1c938571f9252d40bd9a0dcc64/element/11d51cdb-0524-45c1-b340-2a674738c26d/click {"id": "11d51cdb-0524-45c1-b340-2a674738c26d"}
+DEBUG:urllib3.connectionpool:http://localhost:56768 "POST /session/70c47e1c938571f9252d40bd9a0dcc64/element/11d51cdb-0524-45c1-b340-2a674738c26d/click HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:56768/session/70c47e1c938571f9252d40bd9a0dcc64/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:56768 "POST /session/70c47e1c938571f9252d40bd9a0dcc64/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:requests_cache.backends:Initializing backend: None http_cache
+DEBUG:requests_cache.backends.base:Initializing SQLitePickleDict with serializer: <requests_cache.serializers.pipeline.SerializerPipeline object at 0x000001C470AEADD0>
+DEBUG:requests_cache.backends.sqlite:Opening connection to C:\Users\g.drew\OneDrive - Medivant Health\Documents\Python_projects\Src\http_cache.sqlite:responses
+DEBUG:requests_cache.backends.base:Initializing SQLiteDict with serializer: <requests_cache.serializers.pipeline.SerializerPipeline object at 0x000001C470AEADD0>
+DEBUG:requests_cache.backends.sqlite:Opening connection to C:\Users\g.drew\OneDrive - Medivant Health\Documents\Python_projects\Src\http_cache.sqlite:redirects
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:57335/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}, "desiredCapabilities": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:57335
+DEBUG:urllib3.connectionpool:http://localhost:57335 "POST /session HTTP/1.1" 200 795
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:requests_cache.backends:Initializing backend: None http_cache
+DEBUG:requests_cache.backends.base:Initializing SQLitePickleDict with serializer: <requests_cache.serializers.pipeline.SerializerPipeline object at 0x000001C470AEADD0>
+DEBUG:requests_cache.backends.sqlite:Opening connection to C:\Users\g.drew\OneDrive - Medivant Health\Documents\Python_projects\Src\http_cache.sqlite:responses
+DEBUG:requests_cache.backends.base:Initializing SQLiteDict with serializer: <requests_cache.serializers.pipeline.SerializerPipeline object at 0x000001C470AEADD0>
+DEBUG:requests_cache.backends.sqlite:Opening connection to C:\Users\g.drew\OneDrive - Medivant Health\Documents\Python_projects\Src\http_cache.sqlite:redirects
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:57335/session/c9e4b27b47c8cbadc0d89a701c398af0/url {"url": "https://www.google.com/search?q=ketamine+oregon"}
+DEBUG:urllib3.connectionpool:http://localhost:57335 "POST /session/c9e4b27b47c8cbadc0d89a701c398af0/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:57335/session/c9e4b27b47c8cbadc0d89a701c398af0/timeouts {"implicit": 30000}
+DEBUG:urllib3.connectionpool:http://localhost:57335 "POST /session/c9e4b27b47c8cbadc0d89a701c398af0/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:57335/session/c9e4b27b47c8cbadc0d89a701c398af0/elements {"using": "css selector", "value": "[id=\"pnnext\"]"}
+DEBUG:urllib3.connectionpool:http://localhost:57335 "POST /session/c9e4b27b47c8cbadc0d89a701c398af0/elements HTTP/1.1" 200 90
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:requests_cache.cache_control:Cache directives from request headers: {}
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:57335/session/c9e4b27b47c8cbadc0d89a701c398af0/element/bd9477b1-b33a-42e7-861c-c6dc9b24bfe2/click {"id": "bd9477b1-b33a-42e7-861c-c6dc9b24bfe2"}
+DEBUG:urllib3.connectionpool:http://localhost:57335 "POST /session/c9e4b27b47c8cbadc0d89a701c398af0/element/bd9477b1-b33a-42e7-861c-c6dc9b24bfe2/click HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:57335/session/c9e4b27b47c8cbadc0d89a701c398af0/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:57335 "POST /session/c9e4b27b47c8cbadc0d89a701c398af0/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:requests_cache.backends:Initializing backend: None http_cache
+DEBUG:requests_cache.backends.base:Initializing SQLitePickleDict with serializer: <requests_cache.serializers.pipeline.SerializerPipeline object at 0x0000028D432FEE00>
+DEBUG:requests_cache.backends.sqlite:Opening connection to C:\Users\g.drew\OneDrive - Medivant Health\Documents\Python_projects\Src\http_cache.sqlite:responses
+DEBUG:requests_cache.backends.base:Initializing SQLiteDict with serializer: <requests_cache.serializers.pipeline.SerializerPipeline object at 0x0000028D432FEE00>
+DEBUG:requests_cache.backends.sqlite:Opening connection to C:\Users\g.drew\OneDrive - Medivant Health\Documents\Python_projects\Src\http_cache.sqlite:redirects
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:58978/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}, "desiredCapabilities": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:58978
+DEBUG:urllib3.connectionpool:http://localhost:58978 "POST /session HTTP/1.1" 200 795
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:requests_cache.backends:Initializing backend: None http_cache
+DEBUG:requests_cache.backends.base:Initializing SQLitePickleDict with serializer: <requests_cache.serializers.pipeline.SerializerPipeline object at 0x0000028D432FEE00>
+DEBUG:requests_cache.backends.sqlite:Opening connection to C:\Users\g.drew\OneDrive - Medivant Health\Documents\Python_projects\Src\http_cache.sqlite:responses
+DEBUG:requests_cache.backends.base:Initializing SQLiteDict with serializer: <requests_cache.serializers.pipeline.SerializerPipeline object at 0x0000028D432FEE00>
+DEBUG:requests_cache.backends.sqlite:Opening connection to C:\Users\g.drew\OneDrive - Medivant Health\Documents\Python_projects\Src\http_cache.sqlite:redirects
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:58978/session/25dd43c4b11421ee869ea4173496bf63/url {"url": "https://www.google.com/search?q=ketamine+oregon"}
+DEBUG:urllib3.connectionpool:http://localhost:58978 "POST /session/25dd43c4b11421ee869ea4173496bf63/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:58978/session/25dd43c4b11421ee869ea4173496bf63/timeouts {"implicit": 30000}
+DEBUG:urllib3.connectionpool:http://localhost:58978 "POST /session/25dd43c4b11421ee869ea4173496bf63/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:58978/session/25dd43c4b11421ee869ea4173496bf63/elements {"using": "css selector", "value": "[id=\"pnnext\"]"}
+DEBUG:urllib3.connectionpool:http://localhost:58978 "POST /session/25dd43c4b11421ee869ea4173496bf63/elements HTTP/1.1" 200 90
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:requests_cache.cache_control:Cache directives from request headers: {}
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:58978/session/25dd43c4b11421ee869ea4173496bf63/element/665e9ed5-3a1d-4cdf-8582-3409f3078b06/click {"id": "665e9ed5-3a1d-4cdf-8582-3409f3078b06"}
+DEBUG:urllib3.connectionpool:http://localhost:58978 "POST /session/25dd43c4b11421ee869ea4173496bf63/element/665e9ed5-3a1d-4cdf-8582-3409f3078b06/click HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:58978/session/25dd43c4b11421ee869ea4173496bf63/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:58978 "POST /session/25dd43c4b11421ee869ea4173496bf63/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:requests_cache.backends:Initializing backend: None http_cache
+DEBUG:requests_cache.backends.base:Initializing SQLitePickleDict with serializer: <requests_cache.serializers.pipeline.SerializerPipeline object at 0x0000016EDCCBEE30>
+DEBUG:requests_cache.backends.sqlite:Opening connection to C:\Users\g.drew\OneDrive - Medivant Health\Documents\Python_projects\Src\http_cache.sqlite:responses
+DEBUG:requests_cache.backends.base:Initializing SQLiteDict with serializer: <requests_cache.serializers.pipeline.SerializerPipeline object at 0x0000016EDCCBEE30>
+DEBUG:requests_cache.backends.sqlite:Opening connection to C:\Users\g.drew\OneDrive - Medivant Health\Documents\Python_projects\Src\http_cache.sqlite:redirects
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:59031/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}, "desiredCapabilities": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:59031
+DEBUG:urllib3.connectionpool:http://localhost:59031 "POST /session HTTP/1.1" 200 794
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:requests_cache.backends:Initializing backend: None http_cache
+DEBUG:requests_cache.backends.base:Initializing SQLitePickleDict with serializer: <requests_cache.serializers.pipeline.SerializerPipeline object at 0x0000016EDCCBEE30>
+DEBUG:requests_cache.backends.sqlite:Opening connection to C:\Users\g.drew\OneDrive - Medivant Health\Documents\Python_projects\Src\http_cache.sqlite:responses
+DEBUG:requests_cache.backends.base:Initializing SQLiteDict with serializer: <requests_cache.serializers.pipeline.SerializerPipeline object at 0x0000016EDCCBEE30>
+DEBUG:requests_cache.backends.sqlite:Opening connection to C:\Users\g.drew\OneDrive - Medivant Health\Documents\Python_projects\Src\http_cache.sqlite:redirects
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:59031/session/83737341c31f2bfaa37ebd73c2987ac8/url {"url": "https://www.google.com/search?q=ketamine+oregon"}
+DEBUG:urllib3.connectionpool:http://localhost:59031 "POST /session/83737341c31f2bfaa37ebd73c2987ac8/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:59031/session/83737341c31f2bfaa37ebd73c2987ac8/timeouts {"implicit": 30000}
+DEBUG:urllib3.connectionpool:http://localhost:59031 "POST /session/83737341c31f2bfaa37ebd73c2987ac8/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:59031/session/83737341c31f2bfaa37ebd73c2987ac8/elements {"using": "css selector", "value": "[id=\"pnnext\"]"}
+DEBUG:urllib3.connectionpool:http://localhost:59031 "POST /session/83737341c31f2bfaa37ebd73c2987ac8/elements HTTP/1.1" 200 90
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:requests_cache.cache_control:Cache directives from request headers: {}
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:59031/session/83737341c31f2bfaa37ebd73c2987ac8/element/08833733-078d-4826-9c9f-bf517cd6748c/click {"id": "08833733-078d-4826-9c9f-bf517cd6748c"}
+DEBUG:urllib3.connectionpool:http://localhost:59031 "POST /session/83737341c31f2bfaa37ebd73c2987ac8/element/08833733-078d-4826-9c9f-bf517cd6748c/click HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:59031/session/83737341c31f2bfaa37ebd73c2987ac8/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:59031 "POST /session/83737341c31f2bfaa37ebd73c2987ac8/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:requests_cache.backends:Initializing backend: None http_cache
+DEBUG:requests_cache.backends.base:Initializing SQLitePickleDict with serializer: <requests_cache.serializers.pipeline.SerializerPipeline object at 0x0000012F4618EE00>
+DEBUG:requests_cache.backends.sqlite:Opening connection to C:\Users\g.drew\OneDrive - Medivant Health\Documents\Python_projects\Src\http_cache.sqlite:responses
+DEBUG:requests_cache.backends.base:Initializing SQLiteDict with serializer: <requests_cache.serializers.pipeline.SerializerPipeline object at 0x0000012F4618EE00>
+DEBUG:requests_cache.backends.sqlite:Opening connection to C:\Users\g.drew\OneDrive - Medivant Health\Documents\Python_projects\Src\http_cache.sqlite:redirects
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:59076/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}, "desiredCapabilities": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--disable-software-rasterizer", "--headless", "--disable-extensions", "--disable-gpu"]}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:59076
+DEBUG:urllib3.connectionpool:http://localhost:59076 "POST /session HTTP/1.1" 200 796
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:requests_cache.backends:Initializing backend: None http_cache
+DEBUG:requests_cache.backends.base:Initializing SQLitePickleDict with serializer: <requests_cache.serializers.pipeline.SerializerPipeline object at 0x0000012F4618EE00>
+DEBUG:requests_cache.backends.sqlite:Opening connection to C:\Users\g.drew\OneDrive - Medivant Health\Documents\Python_projects\Src\http_cache.sqlite:responses
+DEBUG:requests_cache.backends.base:Initializing SQLiteDict with serializer: <requests_cache.serializers.pipeline.SerializerPipeline object at 0x0000012F4618EE00>
+DEBUG:requests_cache.backends.sqlite:Opening connection to C:\Users\g.drew\OneDrive - Medivant Health\Documents\Python_projects\Src\http_cache.sqlite:redirects
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:59076/session/9aa85924a818b5cecc92bc4cf111be36/url {"url": "https://www.google.com/search?q=ketamine+oregon"}
+DEBUG:urllib3.connectionpool:http://localhost:59076 "POST /session/9aa85924a818b5cecc92bc4cf111be36/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:59076/session/9aa85924a818b5cecc92bc4cf111be36/timeouts {"implicit": 30000}
+DEBUG:urllib3.connectionpool:http://localhost:59076 "POST /session/9aa85924a818b5cecc92bc4cf111be36/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:59076/session/9aa85924a818b5cecc92bc4cf111be36/elements {"using": "css selector", "value": "[id=\"pnnext\"]"}
+DEBUG:urllib3.connectionpool:http://localhost:59076 "POST /session/9aa85924a818b5cecc92bc4cf111be36/elements HTTP/1.1" 200 90
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:requests_cache.cache_control:Cache directives from request headers: {}
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:59076/session/9aa85924a818b5cecc92bc4cf111be36/element/85f5c465-46ed-41cc-ac6b-64fca3648e34/click {"id": "85f5c465-46ed-41cc-ac6b-64fca3648e34"}
+DEBUG:urllib3.connectionpool:http://localhost:59076 "POST /session/9aa85924a818b5cecc92bc4cf111be36/element/85f5c465-46ed-41cc-ac6b-64fca3648e34/click HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:59076/session/9aa85924a818b5cecc92bc4cf111be36/timeouts {"implicit": 500}
+DEBUG:urllib3.connectionpool:http://localhost:59076 "POST /session/9aa85924a818b5cecc92bc4cf111be36/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request

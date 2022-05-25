@@ -1,6 +1,7 @@
 from Selenium_test import sel_invoke
 from sitemapper import *
 import itertools
+import sys
 
 def get_google_results(term):    
     #This func takes a term and appends it to a google search
@@ -24,7 +25,7 @@ def get_google_results(term):
 def gen_list_of_sitemaps(google_results):
     list_of_sitemaps = []
 
-    temp_slice = dict(itertools.islice(google_results, 3))
+    temp_slice = dict(itertools.islice(google_results[list(google_results)[1]], 3))
 
     for result in temp_slice:
             xml_sitemap = get_sitemap(result)
