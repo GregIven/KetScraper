@@ -22,8 +22,7 @@ def sel_invoke(url):
 
     # source = driver.page_source
     source_dict = html_parser(url)
-    parsed_page = parse_page_results(source_dict["soup"])
-    redir_url = source_dict["redirect"]
+    parsed_page = parse_page_results(source_dict['soup-object'])
     page_list.append(parsed_page)
     next_page[0].click()
     driver.implicitly_wait(0.5)
@@ -40,7 +39,7 @@ def sel_invoke(url):
     #         driver.close()
     #         return page_list
 
-    return {"pages": page_list, "redirect": redir_url}
+    return {'request-headers': source_dict['request-headers'], 'soup-object': parsed_page}
 
         
 

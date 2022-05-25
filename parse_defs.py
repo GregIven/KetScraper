@@ -15,7 +15,6 @@ logging.basicConfig(filename='sitemap_output.log', encoding='utf-8', level=loggi
 
 session = requests_cache.CachedSession()
 
-#TODO remove the requests/bs4 parsing from this def, it should just get passed a html page
 def parse_keywords_from_page(URL):
     page = requests.get(URL)
 
@@ -40,23 +39,17 @@ def parse_keywords_from_page(URL):
 
     return true_strings
 
-#TODO check if the html has a locations/team/contact form on the home page
-#TODO see also if there is a profile/directory of providers
-#TODO the doctors/providers can be identified by a title/certification
-#TODO look for href to tel/mailto
-
 #This function parses an html page for links
 def html_parser(item):
-    
     response = session.get(item, headers={'Accept': 'application/json','User-Agent': 'Chrome/42.0.2311.135'})
-    redir_url = response.url
+    
     try:
         soup = BeautifulSoup(response.text, 'html.parser')
-        return {"redirect": redir_url, "soup": soup}
+        return {'request-headers': response.headers, 'soup-object': soup}
     except requests.HTTPError as err:
         print('{} is the error'.format(err))
         pass
-        
+    
         
 
 def parse_page_results(page):

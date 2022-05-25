@@ -1,6 +1,7 @@
 import logging
 import re
 import json
+import sys
 from wsgiref import headers
 import requests_cache
 import requests
@@ -37,43 +38,49 @@ def get_sitemap(URL):
     if (not contains_HTTPS):
         URL = 'https://' + URL
 
-    SITEMAP = URL + '/sitemap.xml'
-    print(SITEMAP)
     try:
-        # sitemap_req = Request(SITEMAP, headers={'User-Agent': 'Mozilla/5.0'})
-        # sitemap_decoded = urlopen(sitemap_req).read().decode('utf-8')
+        response = session.get(URL, headers={'Accept': 'application/json','User-Agent': 'Chrome/42.0.2311.135'})
+        if (response.status_code == 200):
+            SITEMAP = URL + '/sitemap.xml'
+    except requests.HTTPError as err:
+        print(err)
+        pass
+    else:
+        print('response code not 200, its: {}'.format(response.status_code))
+
+    try:
         response = session.get(SITEMAP, headers={'Accept': 'application/json','User-Agent': 'Chrome/42.0.2311.135'})
         sitemap_souped = BeautifulSoup(response.text, 'lxml-xml')
+        
+        if response.status_code == 301 or response.status_code == 443 or response.status_code == 404:
+            print('status code: {}'.format(response.status_code))
+            sys.exit(1)
+
         logging.debug(sitemap_souped)
-        # x=input()
+        return sitemap_souped
    
     except requests.HTTPError as err:
         print('HTTPError: {}, original url: {}'.format(err.code, URL))
         return None
     except AttributeError as err:
         print('error: {}'.format(err))
-    else:
-        #code 200
-        return sitemap_souped
 
 def get_child_sitemaps(xml):
-    xml = xml.prettify()
+    print(type(xml))
+    x=input()
+    print(xml.find_all("loc"))
+    x=input()
 
-    # print('{} - sample, of {}'.format(xml[25:50]))
-    print(xml[0:5])
 
-    try:
-        sitemaps = []
-        sitemaps = xml.find_all("loc")
-        sitemap_link_hits = individual_site_mapper(sitemaps)
-    except BaseException as err:
-        print('no sitemap found')
-        sitemap_link_hits = []
-        pass
+    sitemaps = []
+    sitemaps = xml.find_all("loc")
+    sitemap_link_hits = individual_site_mapper(sitemaps)
+ 
 
-    print(len(sitemap_link_hits))
+    # print(len(sitemap_link_hits))
 
     if (len(sitemap_link_hits) < 1):
+        print('FIRST 275 CHARS OF SITEMAP')
         print(xml[0:275])
         x=input()
     return sitemap_link_hits
